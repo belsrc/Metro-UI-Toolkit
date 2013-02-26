@@ -1,0 +1,129 @@
+﻿<!--
+    MetroListBox.xaml
+    Copyright (c) 2012 Bryan Kizer
+    All rights reserved.
+    https://github.com/belsrc/ModernUIControls
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions are
+    met:
+
+    Redistributions of source code must retain the above copyright notice,
+    this list of conditions and the following disclaimer.
+
+    Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+
+    Neither the name of the Organization nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+    IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+    TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+    PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+    HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+    SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+    TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+    PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+    LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+    NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MetroUiToolkit">
+
+    <!-- Other Resources -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Brushes.xaml" />
+        <ResourceDictionary Source="FontSizes.xaml" />
+        <ResourceDictionary Source="Fonts.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!-- Start ListBox Styles -->
+    <Style TargetType="{x:Type local:MetroListBox}">
+
+        <!-- Default Styles -->
+        <Setter Property="Background"
+                Value="Transparent" />
+        <Setter Property="Foreground"
+                Value="{StaticResource Black60}" />
+        <Setter Property="BorderThickness"
+                Value="0" />
+        <Setter Property="Template">
+            <Setter.Value>
+
+                <!-- Body Layout -->
+                <ControlTemplate TargetType="{x:Type local:MetroListBox}">
+                    <Grid>
+                        <Border BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <local:MetroScrollViewer x:Name="ScrollViewer"
+                                                     Padding="{TemplateBinding Padding}"
+                                                     Background="{TemplateBinding Background}"
+                                                     BorderBrush="Transparent"
+                                                     BorderThickness="0">
+                                <ItemsPresenter />
+                            </local:MetroScrollViewer>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Resources>
+
+            <!-- Styles for the List Items -->
+            <Style TargetType="{x:Type ListBoxItem}">
+                <Setter Property="FocusVisualStyle"
+                        Value="{x:Null}" />
+
+                <Setter Property="BorderBrush"
+                        Value="Transparent" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                            <Grid Margin="4,0,4,4">
+                                <Border Background="{TemplateBinding Background}"
+                                        BorderBrush="{StaticResource Black20}"
+                                        BorderThickness="0,0,0,1"
+                                        SnapsToDevicePixels="True" />
+                                <ContentPresenter Margin="8,5" />
+                            </Grid>
+                            <ControlTemplate.Triggers>
+
+                                <!-- Item Mouse Over Trigger -->
+                                <MultiTrigger>
+                                    <MultiTrigger.Conditions>
+                                        <Condition Property="IsMouseOver"
+                                                   Value="True" />
+                                        <Condition Property="IsSelected"
+                                                   Value="False" />
+                                    </MultiTrigger.Conditions>
+                                    <Setter Property="Background"
+                                            Value="{StaticResource Black20}" />
+                                    <Setter Property="BorderBrush"
+                                            Value="{StaticResource Black20}" />
+                                    <Setter Property="Foreground"
+                                            Value="{StaticResource Black100}" />
+                                </MultiTrigger>
+
+                                <!-- Item Selected Trigger -->
+                                <Trigger Property="IsSelected"
+                                         Value="True">
+                                    <Setter Property="Background"
+                                            Value="{StaticResource Blue100}" />
+                                    <Setter Property="BorderBrush"
+                                            Value="{StaticResource Blue100}" />
+                                    <Setter Property="Foreground"
+                                            Value="{StaticResource White100}" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Style.Resources>
+    </Style>
+</ResourceDictionary>

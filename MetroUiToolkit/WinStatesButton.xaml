@@ -1,0 +1,149 @@
+﻿<!--
+    WinStatesButton.xaml
+    Copyright (c) 2012 Bryan Kizer
+    All rights reserved.
+    https://github.com/belsrc/ModernUIControls
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions are
+    met:
+
+    Redistributions of source code must retain the above copyright notice,
+    this list of conditions and the following disclaimer.
+
+    Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+
+    Neither the name of the Organization nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+    IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+    TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+    PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+    HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+    SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+    TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+    PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+    LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+    NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<UserControl x:Class="MetroUiToolkit.WinStatesButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:converter="clr-namespace:MetroUiToolkit.Converters"
+             mc:Ignorable="d"
+             d:DesignHeight="35"
+             d:DesignWidth="114"
+             Name="StateButtons"
+             Loaded="StateButtons_Loaded">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/MetroUiToolkit;component/Themes/Brushes.xaml" />
+                <ResourceDictionary Source="/MetroUiToolkit;component/Themes/FontSizes.xaml" />
+                <ResourceDictionary Source="/MetroUiToolkit;component/Themes/Fonts.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <!-- Minimize button canvas image -->
+            <Canvas x:Name="MiniSvg"
+                    Width="30"
+                    Height="30"
+                    ClipToBounds="True"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Cursor="Hand"
+                    Background="{Binding Background, ElementName=StateButtons, Mode=OneWay}"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    MouseEnter="SvgButton_MouseEnter"
+                    MouseLeave="SvgButton_MouseLeave"
+                    MouseLeftButtonDown="MiniSvg_MouseLeftButtonDown"
+                    Visibility="{Binding Path=IsMinimizeVisible, ElementName=StateButtons, Converter={converter:BoolVisibilityConverter}}">
+                <Path Fill="{Binding Foreground, ElementName=StateButtons, Mode=OneWay}"
+                      x:Name="pathMini">
+                    <Path.Data>
+                        <PathGeometry FillRule="Nonzero"
+                                      Figures="M10,19.8125L10,21.6875C10,21.860079,10.139922,22,10.3125,22L19.6875,22C19.860078,22,20,21.860079,20,21.6875L20,19.8125C20,19.639921,19.860078,19.5,19.6875,19.5L10.3125,19.5C10.139922,19.5,10,19.639921,10,19.8125z" />
+                    </Path.Data>
+                </Path>
+            </Canvas>
+            <!-- Normalize button canvas image -->
+            <Canvas Name="NormSvg"
+                    ClipToBounds="True"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    Width="30"
+                    Height="30"
+                    Cursor="Hand"
+                    Background="{Binding Background, ElementName=StateButtons, Mode=OneWay}"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right"
+                    MouseEnter="SvgButton_MouseEnter"
+                    MouseLeave="SvgButton_MouseLeave"
+                    Visibility="Collapsed"
+                    MouseLeftButtonDown="NormSvg_MouseLeftButtonDown">
+                <Path Fill="{Binding Foreground, ElementName=StateButtons, Mode=OneWay}"
+                      Name="window_multi_2_icon">
+                    <Path.Data>
+                        <PathGeometry FillRule="Nonzero"
+                                      Figures="M17.638493,15.727068L17.638493,19.849655 11.615291,19.849655 11.615291,15.727068 17.638493,15.727068 M19.003784,13.078292L10.25,13.078292 10.25,21.215 19.003784,21.215 19.003784,13.078292z M11.615291,10.60625L11.615291,11.971595 20.134709,11.971595 20.134709,19.849655 21.5,19.849655 21.5,10.60625 11.615291,10.60625z" />
+                    </Path.Data>
+                </Path>
+            </Canvas>
+            <!-- Maximize button canvas image -->
+            <Canvas Name="MaxSvg"
+                    Width="30"
+                    Height="30"
+                    Cursor="Hand"
+                    ClipToBounds="True"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Background="{Binding Background, ElementName=StateButtons, Mode=OneWay}"
+                    Visibility="{Binding Path=IsMaximizeVisible, ElementName=StateButtons, Converter={converter:BoolVisibilityConverter}}"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    MouseEnter="SvgButton_MouseEnter"
+                    MouseLeave="SvgButton_MouseLeave"
+                    MouseLeftButtonDown="MaxSvg_MouseLeftButtonDown">
+                <Path Fill="{Binding Foreground, ElementName=StateButtons, Mode=OneWay}"
+                      Name="window_icon"
+                      Height="21"
+                      Width="21"
+                      Margin="0,2,0,0">
+                    <Path.Data>
+                        <PathGeometry FillRule="Nonzero"
+                                      Figures="M18.786408,12.924812L18.786408,18.21594 11.213592,18.21594 11.213592,12.924812 18.786408,12.924812 M20,10.5705L10,10.5705 10,19.4295 20,19.4295 20,10.5705z" />
+                    </Path.Data>
+                </Path>
+            </Canvas>
+            <!-- Close button canvas image -->
+            <Canvas x:Name="CloseSvg"
+                    Width="30"
+                    Height="30"
+                    ClipToBounds="True"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Background="{Binding Background, ElementName=StateButtons, Mode=OneWay}"
+                    Cursor="Hand"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    MouseEnter="SvgButton_MouseEnter"
+                    MouseLeave="SvgButton_MouseLeave"
+                    MouseLeftButtonDown="CloseSvg_MouseLeftButtonDown"
+                    Visibility="{Binding Path=IsCloseVisible, ElementName=StateButtons, Converter={converter:BoolVisibilityConverter}}">
+                <Path Fill="{Binding Foreground, ElementName=StateButtons, Mode=OneWay}"
+                      x:Name="pathCancel">
+                    <Path.Data>
+                        <PathGeometry FillRule="Nonzero"
+                                      Figures="M19.908784,20.033783C19.908746,20.033743,19.908707,20.033704,19.908668,20.033686L16.875033,16.99999 19.908668,13.966296C19.908707,13.966256 19.908746,13.966239 19.908784,13.966199 19.941444,13.933519 19.965054,13.895359 19.980194,13.854714 20.021664,13.743621 19.998014,13.613678 19.908674,13.524342L18.475606,12.091274C18.386266,12.001964 18.256368,11.978327 18.145254,12.019794 18.104624,12.034944 18.066444,12.058544 18.03375,12.091184 18.03375,12.091223 18.033711,12.091241 18.033672,12.091281L14.999992,15.12499 11.966317,12.091295C11.966278,12.091256 11.966259,12.091234 11.96622,12.091195 11.93354,12.058555 11.89538,12.034945 11.854755,12.019805 11.743622,11.978325 11.61372,12.001985 11.524383,12.091295L10.091297,13.524381C10.001957,13.613721 9.9783272,13.743639 10.019797,13.854735 10.034957,13.895365 10.058567,13.933565 10.091207,13.966217 10.091246,13.966239 10.091265,13.966278 10.091304,13.966317L13.124998,16.99999 10.091304,20.033704C10.091285,20.033743 10.091246,20.033765 10.091226,20.033801 10.058586,20.066481 10.034976,20.104641 10.019796,20.145268 9.978316,20.256361 10.001966,20.386304 10.091296,20.47564L11.524383,21.908708C11.613743,21.998048 11.743641,22.021676 11.854754,21.980208 11.895374,21.965068 11.933564,21.941438 11.966239,21.908798 11.966259,21.908759 11.966297,21.908737 11.966336,21.908702L15.000011,18.875005 18.033685,21.908702C18.033723,21.90872 18.033762,21.908759 18.033802,21.908777 18.066492,21.941417 18.104642,21.965047 18.145267,21.980207 18.25638,22.021677 18.386322,21.998027 18.475618,21.908707L19.908686,20.475617C19.998026,20.386287 20.021675,20.256339 19.980206,20.145246 19.965046,20.104616 19.941436,20.066456 19.908776,20.033782z" />
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MetroUiToolkit">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/Brushes.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/FontSizes.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/Fonts.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroTabItem.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroButton.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroScrollBar.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroScrollViewer.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroDataGrid.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroComboBox.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroListBox.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroTextBox.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/SearchBox.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
