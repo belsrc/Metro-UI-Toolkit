@@ -3,9 +3,9 @@ Metro UI Toolkit is a simple library of WPF controls that have a Modern/Metro UI
 
 ##MetroButton##
 ![alt Metro Button](http://bryanckizer.com/gitimg/button.png)  
-_Inherits from Button_
+_Inherits from Button_  
+**Additional Properties**  
 <table>
-    <tr>**Additional Properties**</tr>
     <tr>
     	<td>DisabledBackground [Brush]</td>
         <td>The background color for the button's disabled state.</td>
@@ -18,9 +18,9 @@ _Inherits from Button_
 
 ##MetroComboBox##
 ![alt Metro Combo Box](http://bryanckizer.com/gitimg/combo-box.png)  
-_Inherits from ComboBox_
+_Inherits from ComboBox_  
+**Additional Properties**  
 <table>
-    <tr>**Additional Properties**</tr>
     <tr>
     	<td>ListBackground [Brush]</td>
         <td>The dropdown list background color.</td>
