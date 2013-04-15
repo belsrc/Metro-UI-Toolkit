@@ -51,6 +51,10 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="ButtonDropdown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Themes\MetroDatePicker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -125,6 +129,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ButtonDropdown.xaml.cs">
+      <DependentUpon>ButtonDropdown.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converters\BaseConverter.cs" />
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="MetroDatePicker.cs" />

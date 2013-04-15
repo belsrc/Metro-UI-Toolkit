@@ -40,12 +40,14 @@ namespace MetroUiToolkit {
     using System.Windows;
     using System.Windows.Media;
     using System.Windows.Input;
+    using System.Windows.Controls.Primitives;
 
     /// <summary>
     /// Represents a Metro UI datepicker control.
     /// </summary>
     /// <remarks>
     /// Public Properties:
+    ///     Watermark              : string
     ///     CalendarIconColor      : Brush
     ///     CalendarIconHoverColor : Brush
     ///     TodayBackground        : Brush
@@ -66,11 +68,23 @@ namespace MetroUiToolkit {
         public MetroDatePicker()
             : base() {
             DefaultStyleKey = typeof( MetroDatePicker );
-            this.PreviewKeyDown +=new KeyEventHandler(MetroDatePicker_PreviewKeyDown);
+            this.PreviewKeyDown += new KeyEventHandler( MetroDatePicker_PreviewKeyDown );
         }
 
         /* Properties
            ---------------------------------------------------------------------------------------*/
+
+        public string Watermark {
+            get { return ( string )GetValue( WatermarkProperty ); }
+            set { SetValue( WatermarkProperty, value ); }
+        }
+
+        public static readonly DependencyProperty WatermarkProperty =
+            DependencyProperty.Register( "Watermark",
+                                         typeof( string ),
+                                         typeof( MetroDatePicker ),
+                                         new PropertyMetadata( "Date" )
+                                       );
 
         /// <summary>
         /// Gets or sets the calendar icon color.
@@ -309,6 +323,8 @@ namespace MetroUiToolkit {
 
                 this.SelectedDate = result;
             }
+
+            e.Handled = false;
         }
 
         /* Methods
