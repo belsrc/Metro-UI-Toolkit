@@ -1,8 +1,8 @@
 ﻿// -------------------------------------------------------------------------------
 //    MetroTextBox.cs
-//    Copyright (c) 2012 Bryan Kizer
+//    Copyright (c) 2012-2013 Bryan Kizer
 //    All rights reserved.
-//    https://github.com/belsrc/ModernUIControls
+//    https://github.com/belsrc/Metro-UI-Toolkit
 //
 //    Redistribution and use in source and binary forms, with or without
 //    modification, are permitted provided that the following conditions are
@@ -38,6 +38,10 @@ namespace MetroUiToolkit {
     /// <summary>
     /// Represents a Metro UI textbox control.
     /// </summary>
+    /// <remarks>
+    /// Public Properties:
+    ///     PlaceholderText : string
+    /// </remarks>
     public class MetroTextBox : TextBox {
         /// <summary>
         /// Initializes a new instance of the MetroTextBox class.
@@ -58,11 +62,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for PlaceholderText.
         /// </summary>
-        public static readonly DependencyProperty PlaceholderTextProperty = DependencyProperty.Register( "PlaceholderText",
-                                                                                                         typeof( string ),
-                                                                                                         typeof( MetroTextBox ),
-                                                                                                         new PropertyMetadata( string.Empty )
-                                                                                                       );
+        public static readonly DependencyProperty PlaceholderTextProperty =
+            DependencyProperty.Register( "PlaceholderText",
+                                         typeof( string ),
+                                         typeof( MetroTextBox ),
+                                         new PropertyMetadata( string.Empty )
+                                       );
 
         /// <summary>
         /// Invoked whenever application code or internal processes call ApplyTemplate.

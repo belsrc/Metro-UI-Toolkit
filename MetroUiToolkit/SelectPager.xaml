@@ -1,8 +1,8 @@
 ﻿<!--
     SelectPager.xaml
-    Copyright (c) 2012 Bryan Kizer
+    Copyright (c) 2012-2013 Bryan Kizer
     All rights reserved.
-    https://github.com/belsrc/ModernUIControls
+    https://github.com/belsrc/Metro-UI-Toolkit
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -41,6 +41,9 @@
              Name="PageControl"
              d:DesignHeight="37"
              d:DesignWidth="196"
+             FontFamily="{DynamicResource BodyFontFamily}"
+             FontSize="{DynamicResource SmallFontSize}"
+             Foreground="#FFFAFAFA"
              KeyDown="PageControl_KeyDown"
              LostFocus="PageControl_LostFocus">
     <UserControl.Resources>
@@ -59,8 +62,11 @@
                            VerticalAlignment="Top"
                            Width="40"
                            Padding="0"
-                           FontFamily="{DynamicResource BodyFontFamily}"
-                           FontSize="{DynamicResource SmallFontSize}"
+                           Foreground="{Binding Path=Foreground, ElementName=PageControl}"
+                           FontFamily="{Binding Path=FontFamily, ElementName=PageControl}"
+                           FontSize="{Binding Path=FontSize, ElementName=PageControl}"
+                           DisabledForeground="{Binding Path=DisabledForeground, ElementName=PageControl}"
+                           DisabledBackground="{Binding Path=DisabledBackground, ElementName=PageControl}"
                            IsEnabled="False"
                            Click="btnFirst_Click" />
         <local:MetroButton x:Name="btnBack"
@@ -69,8 +75,11 @@
                            VerticalAlignment="Top"
                            MinWidth="20"
                            Margin="10,0,0,0"
-                           FontFamily="{DynamicResource BodyFontFamily}"
-                           FontSize="{DynamicResource SmallFontSize}"
+                           Foreground="{Binding Path=Foreground, ElementName=PageControl}"
+                           FontFamily="{Binding Path=FontFamily, ElementName=PageControl}"
+                           FontSize="{Binding Path=FontSize, ElementName=PageControl}"
+                           DisabledForeground="{Binding Path=DisabledForeground, ElementName=PageControl}"
+                           DisabledBackground="{Binding Path=DisabledBackground, ElementName=PageControl}"
                            IsEnabled="False"
                            Click="btnBack_Click" />
         <local:MetroTextBox x:Name="txtCurrent"
@@ -83,16 +92,19 @@
                             VerticalContentAlignment="Center"
                             HorizontalContentAlignment="Center"
                             Foreground="{DynamicResource Black80}"
-                            FontFamily="{DynamicResource BodyFontFamily}"
-                            FontSize="{DynamicResource SmallFontSize}" />
+                            FontFamily="{Binding Path=FontFamily, ElementName=PageControl}"
+                            FontSize="{Binding Path=FontSize, ElementName=PageControl}" />
         <local:MetroButton x:Name="btnForward"
                            Content="2"
                            HorizontalAlignment="Left"
                            VerticalAlignment="Top"
                            MinWidth="20"
                            Margin="10,0,0,0"
-                           FontFamily="{DynamicResource BodyFontFamily}"
-                           FontSize="{DynamicResource SmallFontSize}"
+                           Foreground="{Binding Path=Foreground, ElementName=PageControl}"
+                           FontFamily="{Binding Path=FontFamily, ElementName=PageControl}"
+                           FontSize="{Binding Path=FontSize, ElementName=PageControl}"
+                           DisabledForeground="{Binding Path=DisabledForeground, ElementName=PageControl}"
+                           DisabledBackground="{Binding Path=DisabledBackground, ElementName=PageControl}"
                            Click="btnForward_Click" />
         <local:MetroButton x:Name="btnLast"
                            Content="last"
@@ -101,8 +113,11 @@
                            Width="40"
                            Margin="10,0,0,0"
                            Padding="0"
-                           FontFamily="{DynamicResource BodyFontFamily}"
-                           FontSize="{DynamicResource SmallFontSize}"
+                           Foreground="{Binding Path=Foreground, ElementName=PageControl}"
+                           FontFamily="{Binding Path=FontFamily, ElementName=PageControl}"
+                           FontSize="{Binding Path=FontSize, ElementName=PageControl}"
+                           DisabledForeground="{Binding Path=DisabledForeground, ElementName=PageControl}"
+                           DisabledBackground="{Binding Path=DisabledBackground, ElementName=PageControl}"
                            Click="btnLast_Click" />
     </StackPanel>
 </UserControl>

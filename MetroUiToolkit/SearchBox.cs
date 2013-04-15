@@ -1,8 +1,8 @@
 ﻿// -------------------------------------------------------------------------------
 //    SearchBox.cs
-//    Copyright (c) 2012 Bryan Kizer
+//    Copyright (c) 2012-2013 Bryan Kizer
 //    All rights reserved.
-//    https://github.com/belsrc/ModernUIControls
+//    https://github.com/belsrc/Metro-UI-Toolkit
 //
 //    Redistribution and use in source and binary forms, with or without
 //    modification, are permitted provided that the following conditions are
@@ -34,10 +34,25 @@
 namespace MetroUiToolkit {
     using System.Windows;
     using System.Windows.Controls;
+    using System.Windows.Media;
 
     /// <summary>
     /// Represents a Metro UI search control.
     /// </summary>
+    /// <remarks>
+    /// Public Properties:
+    ///     PlaceholderText       : string
+    ///     ListBackground        : Brush
+    ///     ListForeground        : Brush
+    ///     ButtonHoverBackground : Brush
+    ///     ButtonHoverForeground : Brush
+    ///     SelectedBackground    : Brush
+    ///     SelectedForeground    : Brush
+    ///     SeperatorColor        : Brush
+    ///     
+    /// Public Events:
+    ///     SearchClick           : Bubble
+    /// </remarks>
     public class SearchBox : ComboBox {
         /// <summary>
         /// Initializes a new instance of the SearchBox class.
@@ -58,11 +73,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Routed event register for the SearchClick event.
         /// </summary>
-        public static readonly RoutedEvent SearchClickEvent = EventManager.RegisterRoutedEvent( "SearchClick",
-                                                                                                RoutingStrategy.Bubble,
-                                                                                                typeof( RoutedEventHandler ),
-                                                                                                typeof( SearchBox )
-                                                                                              );
+        public static readonly RoutedEvent SearchClickEvent =
+            EventManager.RegisterRoutedEvent( "SearchClick",
+                                              RoutingStrategy.Bubble,
+                                              typeof( RoutedEventHandler ),
+                                              typeof( SearchBox )
+                                            );
 
         /// <summary>
         /// Gets or sets the placeholder text value.
@@ -75,11 +91,152 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for SearchHolderText.
         /// </summary>
-        public static readonly DependencyProperty PlaceholderTextProperty = DependencyProperty.Register( "PlaceholderText",
-                                                                                                         typeof( string ),
-                                                                                                         typeof( SearchBox ),
-                                                                                                         new PropertyMetadata( string.Empty )
-                                                                                                       );
+        public static readonly DependencyProperty PlaceholderTextProperty =
+            DependencyProperty.Register( "PlaceholderText",
+                                         typeof( string ),
+                                         typeof( SearchBox ),
+                                         new PropertyMetadata( string.Empty )
+                                       );
+
+        /// <summary>
+        /// Gets or sets the dropdown list background color.
+        /// </summary>
+        public Brush ListBackground {
+            get { return ( Brush )GetValue( ListBackgroundProperty ); }
+            set { SetValue( ListBackgroundProperty, value ); }
+        }
+
+        /// <summary>
+        /// Dependency Property for ListBackground.
+        /// </summary>
+        public static readonly DependencyProperty ListBackgroundProperty =
+            DependencyProperty.Register( "ListBackground",
+                                         typeof( Brush ),
+                                         typeof( SearchBox ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 255, 255, 255 ) ) )
+                                       );
+
+        /// <summary>
+        /// Gets or sets the dropdown list foreground color.
+        /// </summary>
+        public Brush ListForeground {
+            get { return ( Brush )GetValue( ListForegroundProperty ); }
+            set { SetValue( ListForegroundProperty, value ); }
+        }
+
+        /// <summary>
+        /// Dependency Property for ListForeground.
+        /// </summary>
+        public static readonly DependencyProperty ListForegroundProperty =
+            DependencyProperty.Register( "ListForeground",
+                                         typeof( Brush ),
+                                         typeof( SearchBox ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 51, 51, 51 ) ) )
+                                       );
+
+        /// <summary>
+        /// Gets or sets the button background color while in the hover-over state.
+        /// </summary>
+        public Brush ButtonHoverBackground {
+            get { return ( Brush )GetValue( ButtonHoverBackgroundProperty ); }
+            set { SetValue( ButtonHoverBackgroundProperty, value ); }
+        }
+
+        /// <summary>
+        /// Dependency Property for ButtonHoverBackground.
+        /// </summary>
+        public static readonly DependencyProperty ButtonHoverBackgroundProperty =
+            DependencyProperty.Register( "ButtonHoverBackground",
+                                         typeof( Brush ),
+                                         typeof( SearchBox ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 27, 161, 226 ) ) )
+                                       );
+
+        /// <summary>
+        /// Gets or sets the button foreground color while in the hover-over state.
+        /// </summary>
+        public Brush ButtonHoverForeground {
+            get { return ( Brush )GetValue( ButtonHoverForegroundProperty ); }
+            set { SetValue( ButtonHoverForegroundProperty, value ); }
+        }
+
+        /// <summary>
+        /// Dependency Property for ButtonHoverForeground.
+        /// </summary>
+        public static readonly DependencyProperty ButtonHoverForegroundProperty =
+            DependencyProperty.Register( "ButtonHoverForeground",
+                                         typeof( Brush ),
+                                         typeof( SearchBox ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 255, 255, 255 ) ) )
+                                       );
+
+        /// <summary>
+        /// Gets or sets the list item background color while in the selected state.
+        /// </summary>
+        public Brush SelectedBackground {
+            get { return ( Brush )GetValue( SelectedBackgroundProperty ); }
+            set { SetValue( SelectedBackgroundProperty, value ); }
+        }
+
+        /// <summary>
+        /// Dependency Property for SelectedBackground.
+        /// </summary>
+        public static readonly DependencyProperty SelectedBackgroundProperty =
+            DependencyProperty.Register( "SelectedBackground",
+                                         typeof( Brush ),
+                                         typeof( SearchBox ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 27, 161, 226 ) ) )
+                                       );
+
+        /// <summary>
+        /// Gets or sets the list item foreground color while in the selected state.
+        /// </summary>
+        public Brush SelectedForeground {
+            get { return ( Brush )GetValue( SelectedForegroundProperty ); }
+            set { SetValue( SelectedForegroundProperty, value ); }
+        }
+
+        /// <summary>
+        /// Dependency Property for SelectedForeground.
+        /// </summary>
+        public static readonly DependencyProperty SelectedForegroundProperty =
+            DependencyProperty.Register( "SelectedForeground",
+                                         typeof( Brush ),
+                                         typeof( SearchBox ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 255, 255, 255 ) ) )
+                                       );
+
+        /// <summary>
+        /// Gets or sets the list item separator color.
+        /// </summary>
+        public Brush SeparatorColor {
+            get { return ( Brush )GetValue( SeparatorColorProperty ); }
+            set { SetValue( SeparatorColorProperty, value ); }
+        }
+
+        /// <summary>
+        /// Dependency Property for SeparatorColor.
+        /// </summary>
+        public static readonly DependencyProperty SeparatorColorProperty =
+            DependencyProperty.Register( "SeparatorColor",
+                                         typeof( Brush ),
+                                         typeof( SearchBox ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 204, 204, 204 ) ) )
+                                       );
 
         private void searchButton_Click( object sender, System.Windows.RoutedEventArgs e ) {
             if( this.Text != string.Empty ) {

@@ -1,8 +1,8 @@
 ﻿<!--
     MetroListBox.xaml
-    Copyright (c) 2012 Bryan Kizer
+    Copyright (c) 2012-2013 Bryan Kizer
     All rights reserved.
-    https://github.com/belsrc/ModernUIControls
+    https://github.com/belsrc/Metro-UI-Toolkit
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -58,11 +58,12 @@
                 <!-- Body Layout -->
                 <ControlTemplate TargetType="{x:Type local:MetroListBox}">
                     <Grid>
-                        <Border BorderBrush="{TemplateBinding BorderBrush}"
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}">
                             <local:MetroScrollViewer x:Name="ScrollViewer"
                                                      Padding="{TemplateBinding Padding}"
-                                                     Background="{TemplateBinding Background}"
+                                                     Background="Transparent"
                                                      BorderBrush="Transparent"
                                                      BorderThickness="0">
                                 <ItemsPresenter />
@@ -78,15 +79,14 @@
             <Style TargetType="{x:Type ListBoxItem}">
                 <Setter Property="FocusVisualStyle"
                         Value="{x:Null}" />
-
                 <Setter Property="BorderBrush"
-                        Value="Transparent" />
+                        Value="{StaticResource Black20}" />
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type ListBoxItem}">
-                            <Grid Margin="4,0,4,4">
+                            <Grid>
                                 <Border Background="{TemplateBinding Background}"
-                                        BorderBrush="{StaticResource Black20}"
+                                        BorderBrush="{Binding SeparatorColor, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MetroListBox}}}"
                                         BorderThickness="0,0,0,1"
                                         SnapsToDevicePixels="True" />
                                 <ContentPresenter Margin="8,5" />
@@ -102,22 +102,22 @@
                                                    Value="False" />
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Background"
-                                            Value="{StaticResource Black20}" />
+                                            Value="{Binding HoverBackground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MetroListBox}}}" />
                                     <Setter Property="BorderBrush"
-                                            Value="{StaticResource Black20}" />
+                                            Value="{Binding HoverBackground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MetroListBox}}}" />
                                     <Setter Property="Foreground"
-                                            Value="{StaticResource Black100}" />
+                                            Value="{Binding HoverForeground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MetroListBox}}}" />
                                 </MultiTrigger>
 
                                 <!-- Item Selected Trigger -->
                                 <Trigger Property="IsSelected"
                                          Value="True">
                                     <Setter Property="Background"
-                                            Value="{StaticResource Blue100}" />
+                                            Value="{Binding SelectedBackground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MetroListBox}}}" />
                                     <Setter Property="BorderBrush"
-                                            Value="{StaticResource Blue100}" />
+                                            Value="{Binding SelectedBackground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MetroListBox}}}" />
                                     <Setter Property="Foreground"
-                                            Value="{StaticResource White100}" />
+                                            Value="{Binding SelectedForeground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MetroListBox}}}" />
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>

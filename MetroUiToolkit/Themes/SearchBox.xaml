@@ -1,8 +1,8 @@
 ﻿<!--
     SearchBox.xaml
-    Copyright (c) 2012 Bryan Kizer
+    Copyright (c) 2012-2013 Bryan Kizer
     All rights reserved.
-    https://github.com/belsrc/ModernUIControls
+    https://github.com/belsrc/Metro-UI-Toolkit
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -172,10 +172,10 @@
                                                              Value="true">
                                                         <Setter TargetName="BtnRoot"
                                                                 Property="Background"
-                                                                Value="{StaticResource Blue100}" />
+                                                                Value="{Binding ButtonHoverBackground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:SearchBox}}}" />
                                                         <Setter TargetName="MagGlass"
                                                                 Property="Fill"
-                                                                Value="{StaticResource White100}" />
+                                                                Value="{Binding ButtonHoverForeground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:SearchBox}}}" />
                                                     </Trigger>
                                                 </ControlTemplate.Triggers>
                                             </ControlTemplate>
@@ -223,7 +223,7 @@
                                   MinWidth="{TemplateBinding ActualWidth}"
                                   MaxHeight="{TemplateBinding MaxDropDownHeight}">
                                 <Border x:Name="DropDownBorder"
-                                        Background="{StaticResource White100}"
+                                        Background="{Binding ListBackground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:SearchBox}}}"
                                         BorderThickness="1"
                                         BorderBrush="{StaticResource Black20}" />
                                 <local:MetroScrollViewer SnapsToDevicePixels="True">
@@ -357,7 +357,7 @@
             <!-- Styles for the Combo Box Items -->
             <Style TargetType="ComboBoxItem">
                 <Setter Property="Foreground"
-                        Value="{StaticResource Black80}" />
+                        Value="{Binding ListForeground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:SearchBox}}}" />
                 <Setter Property="SnapsToDevicePixels"
                         Value="true" />
                 <Setter Property="OverridesDefaultStyle"
@@ -368,7 +368,8 @@
                             <Border Name="Border"
                                     Padding="2"
                                     SnapsToDevicePixels="true"
-                                    BorderThickness="1">
+                                    BorderBrush="{Binding SeparatorColor, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:SearchBox}}}"
+                                    BorderThickness="0,0,0,1">
                                 <ContentPresenter />
                             </Border>
                             <ControlTemplate.Triggers>
@@ -378,9 +379,9 @@
                                          Value="true">
                                     <Setter TargetName="Border"
                                             Property="Background"
-                                            Value="{StaticResource Blue100}" />
+                                            Value="{Binding SelectedBackground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:SearchBox}}}" />
                                     <Setter Property="Foreground"
-                                            Value="{StaticResource White100}" />
+                                            Value="{Binding SelectedForeground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:SearchBox}}}" />
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>

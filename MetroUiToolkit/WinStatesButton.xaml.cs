@@ -1,8 +1,8 @@
 ﻿// -------------------------------------------------------------------------------
 //    WinStatesButton.xaml.cs
-//    Copyright (c) 2012 Bryan Kizer
+//    Copyright (c) 2012-2013 Bryan Kizer
 //    All rights reserved.
-//    https://github.com/belsrc/ModernUIControls
+//    https://github.com/belsrc/Metro-UI-Toolkit
 //
 //    Redistribution and use in source and binary forms, with or without
 //    modification, are permitted provided that the following conditions are
@@ -39,23 +39,24 @@ namespace MetroUiToolkit {
     using System.Windows.Media;
     using System.Windows.Media.Animation;
     using System.Windows.Shapes;
+using System.ComponentModel;
 
     /// <summary>
     /// Interaction logic for WinStatesButton.xaml
     /// </summary>
     /// <remarks>
     /// Public Properties:
-    ///     BackgroundHover: Brush
-    ///     ForegroundHover: Brush
-    ///     IsCloseVisible: bool
-    ///     IsMinimizeVisible: bool
-    ///     IsMaximizeVisible: bool
+    ///     BackgroundHover   : Brush
+    ///     ForegroundHover   : Brush
+    ///     IsCloseVisible    : bool
+    ///     IsMinimizeVisible : bool
+    ///     IsMaximizeVisible : bool
     ///     
     /// Public Events:
-    ///     MinimizeClick: Bubble
-    ///     MaximizeClick: Bubble
-    ///     NormalizeClick: Bubble
-    ///     CloseClick: Bubble
+    ///     MinimizeClick     : Bubble
+    ///     MaximizeClick     : Bubble
+    ///     NormalizeClick    : Bubble
+    ///     CloseClick        : Bubble
     /// </remarks>
     public partial class WinStatesButton : UserControl {
         /// <summary>
@@ -64,7 +65,7 @@ namespace MetroUiToolkit {
         public WinStatesButton() {
             InitializeComponent();
         }
-
+        
         /* Events
            ---------------------------------------------------------------------------------------*/
 
@@ -79,11 +80,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Routed event register for the MinimizeClick event.
         /// </summary>
-        public static readonly RoutedEvent MinimizeClickEvent = EventManager.RegisterRoutedEvent( "MinimizeClick",
-                                                                                                  RoutingStrategy.Bubble,
-                                                                                                  typeof( RoutedEventHandler ),
-                                                                                                  typeof( WinStatesButton )
-                                                                                                );
+        public static readonly RoutedEvent MinimizeClickEvent =
+            EventManager.RegisterRoutedEvent( "MinimizeClick",
+                                              RoutingStrategy.Bubble,
+                                              typeof( RoutedEventHandler ),
+                                              typeof( WinStatesButton )
+                                            );
 
         /// <summary>
         /// Adds or removes the event handler for the MaximizeClick event.
@@ -96,11 +98,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Routed event register for the MaximizeClick event.
         /// </summary>
-        public static readonly RoutedEvent MaximizeClickEvent = EventManager.RegisterRoutedEvent( "MaximizeClick",
-                                                                                                  RoutingStrategy.Bubble,
-                                                                                                  typeof( RoutedEventHandler ),
-                                                                                                  typeof( WinStatesButton )
-                                                                                                );
+        public static readonly RoutedEvent MaximizeClickEvent =
+            EventManager.RegisterRoutedEvent( "MaximizeClick",
+                                              RoutingStrategy.Bubble,
+                                              typeof( RoutedEventHandler ),
+                                              typeof( WinStatesButton )
+                                            );
 
         /// <summary>
         /// Adds or removes the event handler for the NormalizeClick event.
@@ -113,11 +116,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Routed event register for the NormalizeClick event.
         /// </summary>
-        public static readonly RoutedEvent NormalizeClickEvent = EventManager.RegisterRoutedEvent( "NormalizeClick",
-                                                                                                  RoutingStrategy.Bubble,
-                                                                                                  typeof( RoutedEventHandler ),
-                                                                                                  typeof( WinStatesButton )
-                                                                                                );
+        public static readonly RoutedEvent NormalizeClickEvent =
+            EventManager.RegisterRoutedEvent( "NormalizeClick",
+                                              RoutingStrategy.Bubble,
+                                              typeof( RoutedEventHandler ),
+                                              typeof( WinStatesButton )
+                                            );
 
         /// <summary>
         /// Adds or removes the event handler for the CloseClick event.
@@ -130,11 +134,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Routed event register for the CloseClick event.
         /// </summary>
-        public static readonly RoutedEvent CloseClickEvent = EventManager.RegisterRoutedEvent( "CloseClick",
-                                                                                               RoutingStrategy.Bubble,
-                                                                                               typeof( RoutedEventHandler ),
-                                                                                               typeof( WinStatesButton )
-                                                                                             );
+        public static readonly RoutedEvent CloseClickEvent =
+            EventManager.RegisterRoutedEvent( "CloseClick",
+                                              RoutingStrategy.Bubble,
+                                              typeof( RoutedEventHandler ),
+                                              typeof( WinStatesButton )
+                                            );
 
         /* Properties
         ---------------------------------------------------------------------------------------*/
@@ -150,13 +155,14 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for ForegroundHover.
         /// </summary>
-        public static readonly DependencyProperty ForegroundHoverProperty = DependencyProperty.Register( "ForegroundHover",
-                                                                                                    typeof( Brush ),
-                                                                                                    typeof( WinStatesButton ),
-                                                                                                    new PropertyMetadata( new SolidColorBrush(
-                                                                                                            Color.FromArgb( 255, 51, 51, 51 )
-                                                                                                        ) )
-                                                                                                  );
+        public static readonly DependencyProperty ForegroundHoverProperty =
+            DependencyProperty.Register( "ForegroundHover",
+                                         typeof( Brush ),
+                                         typeof( WinStatesButton ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 51, 51, 51 ) ) )
+                                       );
 
         /// <summary>
         /// Gets or sets the background hover color brush.
@@ -169,13 +175,14 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for BackgroundHover.
         /// </summary>
-        public static readonly DependencyProperty BackgroundHoverProperty = DependencyProperty.Register( "BackgroundHover",
-                                                                                                    typeof( Brush ),
-                                                                                                    typeof( WinStatesButton ),
-                                                                                                    new PropertyMetadata( new SolidColorBrush(
-                                                                                                            Color.FromArgb( 255, 200, 200, 200 )
-                                                                                                        ) )
-                                                                                                  );
+        public static readonly DependencyProperty BackgroundHoverProperty =
+            DependencyProperty.Register( "BackgroundHover",
+                                         typeof( Brush ),
+                                         typeof( WinStatesButton ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 200, 200, 200 ) ) )
+                                       );
 
         /// <summary>
         /// Gets or sets a value indicating whether the close button is visible.
@@ -188,11 +195,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for IsCloseVisible.
         /// </summary>
-        public static readonly DependencyProperty IsCloseVisibleProperty = DependencyProperty.Register( "IsCloseVisible",
-                                                                                                        typeof( bool ),
-                                                                                                        typeof( WinStatesButton ),
-                                                                                                        new PropertyMetadata( true )
-                                                                                                      );
+        public static readonly DependencyProperty IsCloseVisibleProperty =
+            DependencyProperty.Register( "IsCloseVisible",
+                                         typeof( bool ),
+                                         typeof( WinStatesButton ),
+                                         new PropertyMetadata( true )
+                                       );
 
         /// <summary>
         /// Gets or sets a value indicating whether the minimize button is visible.
@@ -205,11 +213,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for IsMinimizeVisible.
         /// </summary>
-        public static readonly DependencyProperty IsMinimizeVisibleProperty = DependencyProperty.Register( "IsMinimizeVisible",
-                                                                                                        typeof( bool ),
-                                                                                                        typeof( WinStatesButton ),
-                                                                                                        new PropertyMetadata( true )
-                                                                                                      );
+        public static readonly DependencyProperty IsMinimizeVisibleProperty =
+            DependencyProperty.Register( "IsMinimizeVisible",
+                                         typeof( bool ),
+                                         typeof( WinStatesButton ),
+                                         new PropertyMetadata( true )
+                                       );
 
         /// <summary>
         /// Gets or sets a value indicating whether the maximize button is visible.
@@ -222,11 +231,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for IsMaximizeVisible.
         /// </summary>
-        public static readonly DependencyProperty IsMaximizeVisibleProperty = DependencyProperty.Register( "IsMaximizeVisible",
-                                                                                                        typeof( bool ),
-                                                                                                        typeof( WinStatesButton ),
-                                                                                                        new PropertyMetadata( true )
-                                                                                                      );
+        public static readonly DependencyProperty IsMaximizeVisibleProperty =
+            DependencyProperty.Register( "IsMaximizeVisible",
+                                         typeof( bool ),
+                                         typeof( WinStatesButton ),
+                                         new PropertyMetadata( true )
+                                       );
 
         /* Event Handlers
            ---------------------------------------------------------------------------------------*/
@@ -282,9 +292,9 @@ namespace MetroUiToolkit {
 
         private void HoverChange( Canvas can, Brush foreground, Brush background ) {
             // Make sure they are both SolidColorBrushes, hassle fading other brush types
-            if( this.Background.GetType() == typeof( SolidColorBrush ) &&
-                this.BackgroundHover.GetType() == typeof( SolidColorBrush ) )
-            {
+            if( this.Background != null &&
+                this.Background.GetType() == typeof( SolidColorBrush ) &&
+                this.BackgroundHover.GetType() == typeof( SolidColorBrush ) ) {
                 // Get the background brush.
                 SolidColorBrush curBg = can.Background as SolidColorBrush;
                 can.Background = EaseBrush( curBg,
@@ -293,7 +303,8 @@ namespace MetroUiToolkit {
                                           );
 
                 // See if we can animate the foreground
-                if( this.Foreground.GetType() == typeof( SolidColorBrush ) &&
+                if( this.Foreground != null &&
+                    this.Foreground.GetType() == typeof( SolidColorBrush ) &&
                     this.ForegroundHover.GetType() == typeof( SolidColorBrush ) ) {
                     // Get the foreground brush.
                     SolidColorBrush fillBrush = ( can.Children[ 0 ] as Path ).Fill as SolidColorBrush;

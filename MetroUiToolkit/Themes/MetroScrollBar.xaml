@@ -1,8 +1,8 @@
 ﻿<!--
     MetroScrollBar.xaml
-    Copyright (c) 2012 Bryan Kizer
+    Copyright (c) 2012-2013 Bryan Kizer
     All rights reserved.
-    https://github.com/belsrc/ModernUIControls
+    https://github.com/belsrc/Metro-UI-Toolkit
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -54,7 +54,7 @@
         <Border Background="{TemplateBinding BorderBrush}"
                 Padding="0"
                 Opacity=".2">
-            <Border Background="{TemplateBinding Background}"
+            <Border Background="{Binding ThumbColor, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MetroScrollBar}}}"
                     BorderThickness="0" />
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="CommonStates">
@@ -82,11 +82,10 @@
     <ControlTemplate x:Key="VerticalBarTemplate"
                      TargetType="{x:Type local:MetroScrollBar}">
         <Grid>
-            <Border Background="{StaticResource Black5}"
-                    BorderBrush="{StaticResource Black40}"
+            <Border Background="{Binding BarColor, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MetroScrollBar}}}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
                     BorderThickness="1"
                     Padding="1">
-                <!-- BorderThickness : 0 and Padding : 0 for truly flat look -->
                 <Track x:Name="PART_Track"
                        IsDirectionReversed="True">
 
@@ -99,7 +98,6 @@
                     <!-- Scroller Thumb -->
                     <Track.Thumb>
                         <Thumb Template="{StaticResource ThumbTemplate}"
-                               Background="{TemplateBinding Background}"
                                Margin="1,0,1,0" />
                     </Track.Thumb>
 
@@ -117,30 +115,29 @@
     <ControlTemplate x:Key="HorizontalBarTemplate"
                      TargetType="{x:Type local:MetroScrollBar}">
         <Grid>
-            <Border Background="{StaticResource Black5}"
-                    BorderBrush="{StaticResource Black40}"
+            <Border Background="{Binding BarColor, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MetroScrollBar}}}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
                     BorderThickness="1"
                     Padding="1">
                 <!-- BorderThickness : 0 and Padding : 0 for truly flat look -->
                 <Track x:Name="PART_Track"
                        IsDirectionReversed="False">
 
-                    <!-- Top Lg Repeat Button -->
+                    <!-- Left Lg Repeat Button -->
                     <Track.DecreaseRepeatButton>
-                        <RepeatButton Command="ScrollBar.PageUpCommand"
+                        <RepeatButton Command="ScrollBar.PageLeftCommand"
                                       Template="{StaticResource RepeatBtnTemplate}" />
                     </Track.DecreaseRepeatButton>
 
                     <!-- Scroller Thumb -->
                     <Track.Thumb>
                         <Thumb Template="{StaticResource ThumbTemplate}"
-                               Background="{TemplateBinding Background}"
                                Margin="0,1,0,1" />
                     </Track.Thumb>
 
-                    <!-- Bottom Lg Repeat Button -->
+                    <!-- Right Lg Repeat Button -->
                     <Track.IncreaseRepeatButton>
-                        <RepeatButton Command="ScrollBar.PageDownCommand"
+                        <RepeatButton Command="ScrollBar.PageRightCommand"
                                       Template="{StaticResource RepeatBtnTemplate}" />
                     </Track.IncreaseRepeatButton>
                 </Track>
@@ -150,8 +147,6 @@
 
     <!-- Start ScrollBar Styles -->
     <Style TargetType="{x:Type local:MetroScrollBar}">
-        <Setter Property="Background"
-                Value="{StaticResource Black80}" />
         <Style.Triggers>
 
             <!-- Horizontal Orientation Trigger -->

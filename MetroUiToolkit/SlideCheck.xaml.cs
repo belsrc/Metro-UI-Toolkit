@@ -1,8 +1,8 @@
 ﻿// -------------------------------------------------------------------------------
 //    SlideCheck.xaml.cs
-//    Copyright (c) 2012 Bryan Kizer
+//    Copyright (c) 2012-2013 Bryan Kizer
 //    All rights reserved.
-//    https://github.com/belsrc/ModernUIControls
+//    https://github.com/belsrc/Metro-UI-Toolkit
 //
 //    Redistribution and use in source and binary forms, with or without
 //    modification, are permitted provided that the following conditions are
@@ -44,10 +44,10 @@ namespace MetroUiToolkit {
     /// </summary>
     /// <remarks>
     /// Public Control Properties:
-    ///     IsChecked: bool
-    ///     CheckedColor: Brush
-    ///     UncheckedColor: Brush
-    ///     ThumbColor: Brush
+    ///     IsChecked       : bool
+    ///     CheckedColor    : Brush
+    ///     UncheckedColor  : Brush
+    ///     ThumbColor      : Brush
     ///
     /// Public Event
     ///     CheckChanged

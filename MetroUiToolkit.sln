@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroUiToolkit", "MetroUiToolkit\MetroUiToolkit.csproj", "{B334BBB1-FE9C-4B58-9E5B-088B7C6BE718}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUITester", "..\MUITester\MUITester.csproj", "{20F2FFCE-6692-41CE-8F3D-E146332F2C31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroDemo", "..\MetroDemo\MetroDemo.csproj", "{AF745428-4A0F-4347-8797-3C6FEEB7D99F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,16 +25,16 @@ Global
 		{B334BBB1-FE9C-4B58-9E5B-088B7C6BE718}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B334BBB1-FE9C-4B58-9E5B-088B7C6BE718}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B334BBB1-FE9C-4B58-9E5B-088B7C6BE718}.Release|x86.ActiveCfg = Release|Any CPU
-		{20F2FFCE-6692-41CE-8F3D-E146332F2C31}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{20F2FFCE-6692-41CE-8F3D-E146332F2C31}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{20F2FFCE-6692-41CE-8F3D-E146332F2C31}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{20F2FFCE-6692-41CE-8F3D-E146332F2C31}.Debug|x86.ActiveCfg = Debug|x86
-		{20F2FFCE-6692-41CE-8F3D-E146332F2C31}.Debug|x86.Build.0 = Debug|x86
-		{20F2FFCE-6692-41CE-8F3D-E146332F2C31}.Release|Any CPU.ActiveCfg = Release|x86
-		{20F2FFCE-6692-41CE-8F3D-E146332F2C31}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{20F2FFCE-6692-41CE-8F3D-E146332F2C31}.Release|Mixed Platforms.Build.0 = Release|x86
-		{20F2FFCE-6692-41CE-8F3D-E146332F2C31}.Release|x86.ActiveCfg = Release|x86
-		{20F2FFCE-6692-41CE-8F3D-E146332F2C31}.Release|x86.Build.0 = Release|x86
+		{AF745428-4A0F-4347-8797-3C6FEEB7D99F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{AF745428-4A0F-4347-8797-3C6FEEB7D99F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{AF745428-4A0F-4347-8797-3C6FEEB7D99F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{AF745428-4A0F-4347-8797-3C6FEEB7D99F}.Debug|x86.ActiveCfg = Debug|x86
+		{AF745428-4A0F-4347-8797-3C6FEEB7D99F}.Debug|x86.Build.0 = Debug|x86
+		{AF745428-4A0F-4347-8797-3C6FEEB7D99F}.Release|Any CPU.ActiveCfg = Release|x86
+		{AF745428-4A0F-4347-8797-3C6FEEB7D99F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{AF745428-4A0F-4347-8797-3C6FEEB7D99F}.Release|Mixed Platforms.Build.0 = Release|x86
+		{AF745428-4A0F-4347-8797-3C6FEEB7D99F}.Release|x86.ActiveCfg = Release|x86
+		{AF745428-4A0F-4347-8797-3C6FEEB7D99F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

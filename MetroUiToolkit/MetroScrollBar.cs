@@ -1,8 +1,8 @@
 ﻿// -------------------------------------------------------------------------------
 //    MetroScrollBar.cs
-//    Copyright (c) 2012 Bryan Kizer
+//    Copyright (c) 2012-2013 Bryan Kizer
 //    All rights reserved.
-//    https://github.com/belsrc/ModernUIControls
+//    https://github.com/belsrc/Metro-UI-Toolkit
 //
 //    Redistribution and use in source and binary forms, with or without
 //    modification, are permitted provided that the following conditions are
@@ -33,10 +33,17 @@
 // -------------------------------------------------------------------------------
 namespace MetroUiToolkit {
     using System.Windows.Controls.Primitives;
+using System.Windows.Media;
+using System.Windows;
 
     /// <summary>
     /// Represents a Metro UI scrollbar control.
     /// </summary>
+    /// <remarks>
+    /// Public Properties:
+    ///     BarColor   : Brush
+    ///     ThumbColor : Brush
+    /// </remarks>
     public class MetroScrollBar : ScrollBar {
         /// <summary>
         /// Initializes a new instance of the MetroScrollBar class.
@@ -45,6 +52,46 @@ namespace MetroUiToolkit {
             : base() {
             DefaultStyleKey = typeof( MetroScrollBar );
         }
+
+        /// <summary>
+        /// Gets or sets the the scrollbar's color.
+        /// </summary>
+        public Brush BarColor {
+            get { return ( Brush )GetValue( BarColorProperty ); }
+            set { SetValue( BarColorProperty, value ); }
+        }
+
+        /// <summary>
+        /// Dependency Property for BarColor.
+        /// </summary>
+        public static readonly DependencyProperty BarColorProperty =
+            DependencyProperty.Register( "BarColor",
+                                         typeof( Brush ),
+                                         typeof( MetroScrollBar ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 225, 225, 225 ) ) )
+                                       );
+
+        /// <summary>
+        /// Gets or sets the scrollbar's thumb color.
+        /// </summary>
+        public Brush ThumbColor {
+            get { return ( Brush )GetValue( ThumbColorProperty ); }
+            set { SetValue( ThumbColorProperty, value ); }
+        }
+
+        /// <summary>
+        /// Dependency Property for ThumbColor.
+        /// </summary>
+        public static readonly DependencyProperty ThumbColorProperty =
+            DependencyProperty.Register( "ThumbColor",
+                                         typeof( Brush ),
+                                         typeof( MetroScrollBar ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 51, 51, 51 ) ) )
+                                       );
 
         /// <summary>
         /// Invoked whenever application code or internal processes call ApplyTemplate.

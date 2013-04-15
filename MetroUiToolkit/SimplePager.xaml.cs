@@ -1,8 +1,8 @@
 ﻿// -------------------------------------------------------------------------------
 //    SimplePager.xaml.cs
-//    Copyright (c) 2013 Bryan Kizer
+//    Copyright (c) 2012-2013 Bryan Kizer
 //    All rights reserved.
-//    https://github.com/belsrc/ModernUIControls
+//    https://github.com/belsrc/Metro-UI-Toolkit
 //
 //    Redistribution and use in source and binary forms, with or without
 //    modification, are permitted provided that the following conditions are
@@ -43,11 +43,11 @@ namespace MetroUiToolkit {
     /// </summary>
     /// <remarks>
     /// Public Properties:
-    ///     CurrentPage: int
-    ///     PageCount: int
+    ///     CurrentPage : int
+    ///     PageCount   : int
     /// 
     /// Public Event
-    ///     PageChanged: Bubble
+    ///     PageChanged : Bubble
     /// </remarks>
     public partial class SimplePager : UserControl {
         private string _selected;
@@ -74,11 +74,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Routed event register for the PageChanged event.
         /// </summary>
-        public static readonly RoutedEvent PageChangedEvent = EventManager.RegisterRoutedEvent( "PageChanged",
-                                                                                                RoutingStrategy.Bubble,
-                                                                                                typeof( RoutedEventHandler ),
-                                                                                                typeof( SimplePager )
-                                                                                              );
+        public static readonly RoutedEvent PageChangedEvent =
+            EventManager.RegisterRoutedEvent( "PageChanged",
+                                              RoutingStrategy.Bubble,
+                                              typeof( RoutedEventHandler ),
+                                              typeof( SimplePager )
+                                            );
 
         /* Properties
            ---------------------------------------------------------------------------------------*/
@@ -94,12 +95,14 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for CurrentPage.
         /// </summary>
-        public static readonly DependencyProperty CurrentPageProperty = DependencyProperty.Register( "CurrentPage",
-                                                                                                     typeof( int ),
-                                                                                                     typeof( SimplePager ),
-                                                                                                     new PropertyMetadata( 1,
-                                                                                                         new PropertyChangedCallback( CurrentPageChanged ) )
-                                                                                                   );
+        public static readonly DependencyProperty CurrentPageProperty =
+            DependencyProperty.Register( "CurrentPage",
+                                         typeof( int ),
+                                         typeof( SimplePager ),
+                                         new PropertyMetadata(
+                                             1,
+                                             new PropertyChangedCallback( CurrentPageChanged ) )
+                                       );
 
         /// <summary>
         /// Gets or sets the current page number.
@@ -112,11 +115,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for CurrentPage.
         /// </summary>
-        public static readonly DependencyProperty PageCountProperty = DependencyProperty.Register( "PageCount",
-                                                                                                     typeof( int ),
-                                                                                                     typeof( SimplePager ),
-                                                                                                     new PropertyMetadata( 1 )
-                                                                                                   );
+        public static readonly DependencyProperty PageCountProperty =
+            DependencyProperty.Register( "PageCount",
+                                         typeof( int ),
+                                         typeof( SimplePager ),
+                                         new PropertyMetadata( 1 )
+                                       );
 
         // TODO : ActiveColor DP ?
 

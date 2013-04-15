@@ -1,8 +1,8 @@
 ﻿<!--
     Brushes.xaml
-    Copyright (c) 2012 Bryan Kizer
+    Copyright (c) 2012-2013 Bryan Kizer
     All rights reserved.
-    https://github.com/belsrc/ModernUIControls
+    https://github.com/belsrc/Metro-UI-Toolkit
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -38,15 +38,15 @@
     <SolidColorBrush x:Key="Black100"
                      Color="#FF333333" />
     <SolidColorBrush x:Key="Black80"
-                     Color="#CC333333" />
+                     Color="#FF595959" />
     <SolidColorBrush x:Key="Black60"
-                     Color="#99333333" />
+                     Color="#FF888888" />
     <SolidColorBrush x:Key="Black40"
-                     Color="#66333333" />
+                     Color="#FFAAAAAA" />
     <SolidColorBrush x:Key="Black20"
-                     Color="#33333333" />
+                     Color="#FFCCCCCC" />
     <SolidColorBrush x:Key="Black5"
-                     Color="#0D333333" />
+                     Color="#FFF0F0F0" />
 
     <!-- White Brush Colors -->
     <SolidColorBrush x:Key="White100"

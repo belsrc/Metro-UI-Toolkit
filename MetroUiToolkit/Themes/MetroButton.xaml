@@ -1,8 +1,8 @@
 ﻿<!--
     MetroButton.xaml
-    Copyright (c) 2012 Bryan Kizer
+    Copyright (c) 2012-2013 Bryan Kizer
     All rights reserved.
-    https://github.com/belsrc/ModernUIControls
+    https://github.com/belsrc/Metro-UI-Toolkit
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -83,6 +83,8 @@
 
                         <Trigger Property="IsEnabled"
                                  Value="False">
+                            <Setter Property="Foreground"
+                                    Value="{Binding DisabledForeground, RelativeSource={RelativeSource TemplatedParent}}" />
                             <Setter TargetName="RootGrid"
                                     Property="Background"
                                     Value="{Binding DisabledBackground, RelativeSource={RelativeSource TemplatedParent}}" />

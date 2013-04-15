@@ -1,8 +1,8 @@
 ﻿// -------------------------------------------------------------------------------
 //    MetroButton.cs
-//    Copyright (c) 2012 Bryan Kizer
+//    Copyright (c) 2012-2013 Bryan Kizer
 //    All rights reserved.
-//    https://github.com/belsrc/ModernUIControls
+//    https://github.com/belsrc/Metro-UI-Toolkit
 //
 //    Redistribution and use in source and binary forms, with or without
 //    modification, are permitted provided that the following conditions are
@@ -39,6 +39,11 @@ namespace MetroUiToolkit {
     /// <summary>
     /// Represents a Metro UI button control.
     /// </summary>
+    /// <remarks>
+    /// Public Properties:
+    ///     DisabledBackground : Brush
+    ///     DisabledForeground : Brush
+    /// </remarks>
     public class MetroButton : Button {
         /// <summary>
         /// Initializes a new instance of the MetroButton class.
@@ -59,13 +64,34 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for DisabledBackground.
         /// </summary>
-        public static readonly DependencyProperty DisabledBackgroundProperty = DependencyProperty.Register( "DisabledBackground",
-                                                                                                            typeof( Brush ),
-                                                                                                            typeof( MetroButton ),
-                                                                                                            new PropertyMetadata(
-                                                                                                                new SolidColorBrush(
-                                                                                                                    Color.FromArgb( 255, 204, 204, 204 ) ) )
-                                                                                                            );
+        public static readonly DependencyProperty DisabledBackgroundProperty =
+            DependencyProperty.Register( "DisabledBackground",
+                                         typeof( Brush ),
+                                         typeof( MetroButton ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 204, 204, 204 ) ) )
+                                       );
+
+        /// <summary>
+        /// Gets or sets the background color brush for the button's disabled state.
+        /// </summary>
+        public Brush DisabledForeground {
+            get { return ( Brush )GetValue( DisabledForegroundProperty ); }
+            set { SetValue( DisabledForegroundProperty, value ); }
+        }
+
+        /// <summary>
+        /// Dependency Property for DisabledBackground.
+        /// </summary>
+        public static readonly DependencyProperty DisabledForegroundProperty =
+            DependencyProperty.Register( "DisabledForeground",
+                                         typeof( Brush ),
+                                         typeof( MetroButton ),
+                                         new PropertyMetadata(
+                                             new SolidColorBrush(
+                                                 Color.FromArgb( 255, 51, 51, 51 ) ) )
+                                       );
 
         /// <summary>
         /// Invoked whenever application code or internal processes call ApplyTemplate.
