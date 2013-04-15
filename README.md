@@ -59,7 +59,7 @@ _Inherits from DataGrid_
 ![alt Metro Listbox](http://bryanckizer.com/gitimg/Listbox.png)  
 _Inherits from ListBox_
 <table>
-    <tr>**Additional Properties**</tr>
+    <tr><strong>Additional Properties</strong></tr>
     <tr>
     	<td>HoverBackground [Brush]</td>
         <td>The list item background color while in the hover-over state.</td>
