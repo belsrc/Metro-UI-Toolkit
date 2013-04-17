@@ -28,6 +28,10 @@ namespace MetroUiToolkit {
             this.DataContext = this;
         }
 
+        public StackPanel Presenter {
+            get { return this.DropdownContent; }
+        }
+
         public string Text {
             get { return ( string )GetValue( TextProperty ); }
             set { SetValue( TextProperty, value ); }
