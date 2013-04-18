@@ -34,13 +34,14 @@
 namespace MetroUiToolkit {
     using System.Windows;
     using System.Windows.Controls;
+using System.Windows.Media;
 
     /// <summary>
     /// Represents a Metro UI tab item.
     /// </summary>
     /// <remarks>
     /// Public Properties:
-    ///     IsClosable    : bool
+    ///     IsClosable         : bool
     ///     
     /// Public Events:
     ///     TabCloseClick : Bubble
@@ -65,11 +66,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Routed event register for the TabCloseClick event.
         /// </summary>
-        public static readonly RoutedEvent TabCloseClickEvent = EventManager.RegisterRoutedEvent( "TabCloseClick",
-                                                                                                  RoutingStrategy.Bubble,
-                                                                                                  typeof( RoutedEventHandler ),
-                                                                                                  typeof( MetroTabItem )
-                                                                                                );
+        public static readonly RoutedEvent TabCloseClickEvent =
+            EventManager.RegisterRoutedEvent( "TabCloseClick",
+                                              RoutingStrategy.Bubble,
+                                              typeof( RoutedEventHandler ),
+                                              typeof( MetroTabItem )
+                                            );
 
         /// <summary>
         /// Gets or sets a value indicating whether the tab item is closable or not.
@@ -82,11 +84,12 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for IsClosable.
         /// </summary>
-        public static readonly DependencyProperty IsClosableProperty = DependencyProperty.Register( "IsClosable",
-                                                                                                    typeof( bool ),
-                                                                                                    typeof( MetroTabItem ),
-                                                                                                    new PropertyMetadata( true )
-                                                                                                  );
+        public static readonly DependencyProperty IsClosableProperty =
+            DependencyProperty.Register( "IsClosable",
+                                         typeof( bool ),
+                                         typeof( MetroTabItem ),
+                                         new PropertyMetadata( true )
+                                       );
 
         private void closeButton_Click( object sender, System.Windows.RoutedEventArgs e ) {
             this.RaiseEvent( new RoutedEventArgs( TabCloseClickEvent, this ) );

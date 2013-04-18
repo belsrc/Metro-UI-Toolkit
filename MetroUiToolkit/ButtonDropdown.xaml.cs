@@ -55,12 +55,13 @@ namespace MetroUiToolkit {
         /// <summary>
         /// Dependency Property for ItemsSource.
         /// </summary>
-        public static readonly DependencyProperty ItemsSourceProperty = DependencyProperty.Register( "ItemsSource",
-                                                                                                     typeof( ObservableCollection<object> ),
-                                                                                                     typeof( ButtonDropdown ),
-                                                                                                     new PropertyMetadata( new ObservableCollection<object>(),
-                                                                                                         new PropertyChangedCallback( ItemsChanged ) )
-                                                                                                   );
+        public static readonly DependencyProperty ItemsSourceProperty =
+            DependencyProperty.Register( "ItemsSource",
+                                         typeof( ObservableCollection<object> ),
+                                         typeof( ButtonDropdown ),
+                                         new PropertyMetadata( new ObservableCollection<object>(),
+                                             new PropertyChangedCallback( ItemsChanged ) )
+                                       );
 
 
         public bool IsDropDownOpen {
@@ -145,6 +146,10 @@ namespace MetroUiToolkit {
                 PART_Popup.IsOpen = false;
                 this._popTimer.Dispose();
             }, DispatcherPriority.Normal );
+        }
+
+        public void HidePopUp() {
+            PART_Popup.IsOpen = false;
         }
     }
 }

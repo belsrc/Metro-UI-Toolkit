@@ -163,12 +163,8 @@
                         <!-- TabItem Not Selected Trigger -->
                         <Trigger Property="IsSelected"
                                  Value="false">
-                            <Setter Property="Background"
-                                    Value="{StaticResource Black20}" />
-                            <Setter Property="Foreground"
-                                    Value="{StaticResource Black80}" />
                             <Setter Property="Opacity"
-                                    Value=".6" />
+                                    Value=".5" />
                         </Trigger>
 
                         <!-- TabItem IsMouseOver AND Not Selected Trigger -->
@@ -179,12 +175,8 @@
                                 <Condition Property="IsSelected"
                                            Value="false" />
                             </MultiTrigger.Conditions>
-                            <Setter Property="Background"
-                                    Value="{StaticResource Blue100}" />
-                            <Setter Property="Foreground"
-                                    Value="{StaticResource White100}" />
                             <Setter Property="Opacity"
-                                    Value=".6" />
+                                    Value=".8" />
                         </MultiTrigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

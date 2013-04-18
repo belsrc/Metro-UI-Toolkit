@@ -119,7 +119,9 @@ namespace MetroUiToolkit {
             DependencyProperty.Register( "PageCount",
                                          typeof( int ),
                                          typeof( SimplePager ),
-                                         new PropertyMetadata( 1 )
+                                         new PropertyMetadata( 
+                                             1,
+                                             new PropertyChangedCallback(PageCountChanged) )
                                        );
 
         // TODO : ActiveColor DP ?
@@ -129,11 +131,17 @@ namespace MetroUiToolkit {
         /* Event Handlers
            ---------------------------------------------------------------------------------------*/
 
-        private static void CurrentPageChanged( DependencyObject obj, DependencyPropertyChangedEventArgs e ) {
-            SimplePager page = obj as SimplePager;
+        private static void CurrentPageChanged( DependencyObject d, DependencyPropertyChangedEventArgs e ) {
+            SimplePager page = d as SimplePager;
             page.svgBack.Visibility = page.CurrentPage == 1 ? Visibility.Hidden : Visibility.Visible;
             page.svgForward.Visibility = page.CurrentPage == page.PageCount ? Visibility.Hidden : Visibility.Visible;
             page.RaiseEvent( new RoutedEventArgs( PageChangedEvent, page ) );
+        }
+
+        private static void PageCountChanged( DependencyObject d, DependencyPropertyChangedEventArgs e ) {
+            SimplePager page = d as SimplePager;
+            page.CurrentPage = 1;
+            page.SetSelected( page.btnFirst );
         }
 
         private void Button_MouseEnter( object sender, MouseEventArgs e ) {
@@ -228,7 +236,7 @@ namespace MetroUiToolkit {
 
         private void ShiftButtons() {
             if( CurrentPage == 1 ) {
-                FillButton( btnFirst );
+                SetFirstPage();
                 return;
             }
 
@@ -248,6 +256,23 @@ namespace MetroUiToolkit {
 
             FillButton( btnThird );
             this._selected = "btnThird";
+        }
+
+        private void SetFirstPage() {
+            FillButton( btnFirst );
+            btnSecond.Visibility = CurrentPage + 1 > PageCount ?
+                                   Visibility.Hidden :
+                                   Visibility.Visible;
+            btnThird.Visibility = CurrentPage + 2 > PageCount ?
+                                  Visibility.Hidden :
+                                  Visibility.Visible;
+            btnForth.Visibility = CurrentPage + 3 > PageCount ?
+                                  Visibility.Hidden :
+                                  Visibility.Visible;
+
+            btnFifth.Visibility = CurrentPage + 4 > PageCount ?
+                                  Visibility.Hidden :
+                                  Visibility.Visible;
         }
 
         private void FillButton( Button btn ) {
