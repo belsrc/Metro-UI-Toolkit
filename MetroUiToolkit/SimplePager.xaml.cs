@@ -141,6 +141,7 @@ namespace MetroUiToolkit {
         private static void PageCountChanged( DependencyObject d, DependencyPropertyChangedEventArgs e ) {
             SimplePager page = d as SimplePager;
             page.CurrentPage = 1;
+            page.svgForward.Visibility = page.CurrentPage == page.PageCount ? Visibility.Hidden : Visibility.Visible;
             page.SetSelected( page.btnFirst );
         }
 
