@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="f95aa629-9def-418b-9aa5-e4d6af342fa3" Title="MetroUiToolkit Namespace" Url="html/378e6e88-e354-7642-cc77-11741f7d9f73.htm">
+    <HelpTOCNode Id="8f25979c-3eed-4e9f-ab5d-d38b59bb5492" Title="ButtonDropdown Class" Url="html/d792811a-d818-97e4-17a1-790a0f675d3f.htm">
+      <HelpTOCNode Title="ButtonDropdown Members" Url="html/99f5179e-5097-16f6-58ca-f0617d51df71.htm" />
+      <HelpTOCNode Title="ButtonDropdown Constructor " Url="html/d283eaf8-d745-47d9-c133-c1eea868efc7.htm" />
+      <HelpTOCNode Id="abb4a6ff-db60-400a-b1a4-6a7ef3537ce9" Title="ButtonDropdown Fields" Url="html/37f3c5d9-7df9-9fd2-ea40-ecb22af7b796.htm">
+        <HelpTOCNode Title="IsDropDownOpenProperty Field" Url="html/60aa14b4-39e0-700a-ad90-6cb5425592c4.htm" />
+        <HelpTOCNode Title="ItemsSourceProperty Field" Url="html/a45929bc-be99-9c74-b42d-a88b41d93f6a.htm" />
+        <HelpTOCNode Title="ListBackgroundProperty Field" Url="html/8ebde8ce-b350-d9b5-6ab4-665805458053.htm" />
+        <HelpTOCNode Title="MaxDropDownHeightProperty Field" Url="html/d468b944-7826-5eb8-a8a4-6b8abd64f6f4.htm" />
+        <HelpTOCNode Title="TextProperty Field" Url="html/1289c201-66f8-45ac-b177-5e162c074d7d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d79695ea-ebf8-43fd-9d3f-7a5120b056c6" Title="ButtonDropdown Methods" Url="html/c86e0244-4a8c-b524-cf72-c72dd08e3539.htm">
+        <HelpTOCNode Title="HidePopUp Method " Url="html/a14066ab-4e7e-0bb4-c219-4f757833f6f1.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/9e7f05aa-6a40-ed82-06f3-8241ace7c999.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="56c4f568-7709-4c52-a741-45927f14567e" Title="ButtonDropdown Properties" Url="html/ecae44e4-0d5b-c1a7-5c7b-4ea8a57aa389.htm">
+        <HelpTOCNode Title="IsDropDownOpen Property " Url="html/796b6eee-3297-419d-f163-5bed6f2a7c25.htm" />
+        <HelpTOCNode Title="ItemsSource Property " Url="html/39428d00-824f-e921-b66d-0f1cdf380275.htm" />
+        <HelpTOCNode Title="ListBackground Property " Url="html/98f435d9-2b2a-0042-0b40-5ea46160a6dd.htm" />
+        <HelpTOCNode Title="MaxDropDownHeight Property " Url="html/b73a7fea-b588-5bfb-6df9-64e0644c42b4.htm" />
+        <HelpTOCNode Title="Presenter Property " Url="html/e8b4a3ff-6747-37ee-fa94-a69e6c3ef3c5.htm" />
+        <HelpTOCNode Title="Text Property " Url="html/f4fcc3e3-ddea-2d5b-087f-d2091635a6ef.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ButtonDropdown Events" Url="html/88c5e4b1-2225-5b19-3604-848a41088b9c.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="94874270-25c4-4d91-af37-0f275255a4c0" Title="MetroButton Class" Url="html/ba3a7318-17a0-36c3-8cf0-315f829f4424.htm">
+      <HelpTOCNode Title="MetroButton Members" Url="html/4c729c07-9e30-2bcc-446d-2bb819e87ce8.htm" />
+      <HelpTOCNode Title="MetroButton Constructor " Url="html/602e13db-8ba5-9a02-be55-90f696f1b063.htm" />
+      <HelpTOCNode Id="0cdca053-2e90-4d41-b6dd-a322d24baa2a" Title="MetroButton Fields" Url="html/b6b2fcc1-3c67-cc9a-8dd7-889471ac5179.htm">
+        <HelpTOCNode Title="DisabledBackgroundProperty Field" Url="html/a0d1205e-d715-8aff-d06f-5faa57b70149.htm" />
+        <HelpTOCNode Title="DisabledForegroundProperty Field" Url="html/97c6d665-5480-bb80-8534-be4b76d8970f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3da0dea5-00c6-4f9e-8b71-2160768dff78" Title="MetroButton Methods" Url="html/b4bc5176-71a2-f777-da27-eca4c19d43e5.htm">
+        <HelpTOCNode Title="OnApplyTemplate Method " Url="html/a0ef8d00-1fa3-efcc-ca4a-8bd5a7276763.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0618b507-5798-4a24-8244-3c8428d5ab95" Title="MetroButton Properties" Url="html/e9eb3a9a-fba8-ebe3-7bea-2628679bccfd.htm">
+        <HelpTOCNode Title="DisabledBackground Property " Url="html/4e260d18-cdc0-655b-989b-f5a43872072e.htm" />
+        <HelpTOCNode Title="DisabledForeground Property " Url="html/f77351c2-cfdb-6095-ce0e-4e55f8fdfbb6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MetroButton Events" Url="html/fce7b160-5eb5-3b9b-5e10-8d3e87df017f.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="3ffe0066-fe53-4c9b-8ceb-d831e4a63aa7" Title="MetroComboBox Class" Url="html/ba51cd11-57a3-23bc-b904-25e7efd6047f.htm">
+      <HelpTOCNode Title="MetroComboBox Members" Url="html/07b0217a-61f5-6e6a-36ed-129888f2ae55.htm" />
+      <HelpTOCNode Title="MetroComboBox Constructor " Url="html/e865810b-6dea-9ccf-facc-0e65f11bd59c.htm" />
+      <HelpTOCNode Id="4d3c30d5-fa68-4ce0-a4ca-9b2a9a41db93" Title="MetroComboBox Fields" Url="html/9d31ddf3-d550-9785-b9e5-67c8b327f7b5.htm">
+        <HelpTOCNode Title="ButtonHoverBackgroundProperty Field" Url="html/bb95c5ca-b03a-7f87-d839-8b1a172128d4.htm" />
+        <HelpTOCNode Title="ButtonHoverForegroundProperty Field" Url="html/0acf0eb6-ce6a-3209-ef97-210206d78fe5.htm" />
+        <HelpTOCNode Title="ListBackgroundProperty Field" Url="html/2e2c4826-0f08-4d3a-72f3-207003887db6.htm" />
+        <HelpTOCNode Title="ListForegroundProperty Field" Url="html/db8df3b5-a2f9-0e04-03c6-fc2519bb55fb.htm" />
+        <HelpTOCNode Title="SelectedBackgroundProperty Field" Url="html/655c0ea6-7be7-1ddc-9a0a-b17b09a7627a.htm" />
+        <HelpTOCNode Title="SelectedForegroundProperty Field" Url="html/0bf171eb-ba87-db5f-5fd7-2ebf3cd9a8eb.htm" />
+        <HelpTOCNode Title="SeparatorColorProperty Field" Url="html/0830968c-c102-37ea-6816-4c5bd5402a51.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="49ff918d-1eb3-4dbf-8ecb-3b0c7d6eb9cc" Title="MetroComboBox Methods" Url="html/8587408e-4414-6c01-4041-a96b0cb27d0e.htm">
+        <HelpTOCNode Title="OnApplyTemplate Method " Url="html/0bb31d34-c0ef-8f5e-ca8f-8f53da36b39e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e314a3e8-4cad-4cc6-a4df-0e44473195f4" Title="MetroComboBox Properties" Url="html/5c3f16c1-77db-49eb-54ef-6f6b1d2f43c7.htm">
+        <HelpTOCNode Title="ButtonHoverBackground Property " Url="html/374da520-50c7-14c0-841b-93d260dc2d70.htm" />
+        <HelpTOCNode Title="ButtonHoverForeground Property " Url="html/0ef213b2-fc89-edef-4bad-51d309e82777.htm" />
+        <HelpTOCNode Title="ListBackground Property " Url="html/d972abaa-235c-d3f6-5254-b8d264c04d74.htm" />
+        <HelpTOCNode Title="ListForeground Property " Url="html/f4be2aae-fa13-e331-1067-6a01dc252a0d.htm" />
+        <HelpTOCNode Title="SelectedBackground Property " Url="html/8e1f9945-4109-a2ef-c3bb-3a9cc161684b.htm" />
+        <HelpTOCNode Title="SelectedForeground Property " Url="html/df8c8331-f2df-081b-ccbb-c40ef78f03b5.htm" />
+        <HelpTOCNode Title="SeparatorColor Property " Url="html/b859076b-12b1-e88a-6f72-4b0852570d16.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MetroComboBox Events" Url="html/9dbd1b20-1ed1-7cd1-c8e3-bd0d24c3b624.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="08c8c06d-a385-4d42-a2ed-308109e2c241" Title="MetroDataGrid Class" Url="html/4bb95753-9389-31f0-9197-d8d2c39bd8f4.htm">
+      <HelpTOCNode Title="MetroDataGrid Members" Url="html/5f121950-cc84-5c25-7952-7b64c7148885.htm" />
+      <HelpTOCNode Title="MetroDataGrid Constructor " Url="html/fc6e1de6-49a5-4844-da80-c74d635b5a5a.htm" />
+      <HelpTOCNode Id="8b579442-d208-4753-b6d7-85827c1704e7" Title="MetroDataGrid Methods" Url="html/42730be8-04fe-f58e-1fb0-a9912e2746e4.htm">
+        <HelpTOCNode Title="OnApplyTemplate Method " Url="html/77773831-efad-304c-6f5c-b10cdc2b2323.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MetroDataGrid Properties" Url="html/7bfb2b5f-96e7-4b60-f78f-36a61668f7df.htm" />
+      <HelpTOCNode Title="MetroDataGrid Events" Url="html/61c167c1-b628-1d3c-e958-ea650285c8a3.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="48e6d896-fa07-468c-9d94-8a0bc12eec5f" Title="MetroDatePicker Class" Url="html/eb003142-34b4-e898-ab1c-9ed154722f8e.htm">
+      <HelpTOCNode Title="MetroDatePicker Members" Url="html/6cba5102-4446-f13d-b207-1067d11b6488.htm" />
+      <HelpTOCNode Title="MetroDatePicker Constructor " Url="html/36396168-7568-6cd6-ba9a-80697f3ea363.htm" />
+      <HelpTOCNode Id="8387fc67-8920-4812-a5fa-0eb6b4c61d06" Title="MetroDatePicker Fields" Url="html/3ececc32-6fd5-c83f-74e0-1dae0f1b3ebb.htm">
+        <HelpTOCNode Title="BlackoutIconColorProperty Field" Url="html/a692eef6-1854-634b-d56a-9c424a0900e3.htm" />
+        <HelpTOCNode Title="CalendarBackgroundProperty Field" Url="html/5cd82bfe-7e0a-a4a1-caef-a95be98e7b8b.htm" />
+        <HelpTOCNode Title="CalendarForegroundProperty Field" Url="html/03bee527-968c-8900-a677-a4c83a595477.htm" />
+        <HelpTOCNode Title="CalendarHeaderColorProperty Field" Url="html/3bd95996-f677-3734-034e-6bd3dce2d67c.htm" />
+        <HelpTOCNode Title="CalendarIconColorProperty Field" Url="html/36b76959-bb3a-5024-902b-904637686231.htm" />
+        <HelpTOCNode Title="CalendarIconHoverColorProperty Field" Url="html/427e5159-b974-0ebd-ae33-0bdf624acdea.htm" />
+        <HelpTOCNode Title="HeaderForegroundProperty Field" Url="html/cc167f31-8935-f1fe-02fb-7b587a37fd23.htm" />
+        <HelpTOCNode Title="HighlightBackgroundProperty Field" Url="html/3d53df85-30a4-8cc3-ca12-ff242e770cb3.htm" />
+        <HelpTOCNode Title="SelectedBackgroundProperty Field" Url="html/f793a72c-f54f-a3cf-4ac5-097fe3600f6c.htm" />
+        <HelpTOCNode Title="SelectedBorderColorProperty Field" Url="html/5bd02747-cccd-f874-81b2-72a4a964ebbe.htm" />
+        <HelpTOCNode Title="TodayBackgroundProperty Field" Url="html/4d69ee5e-05dd-7678-92e0-8363b5769c5b.htm" />
+        <HelpTOCNode Title="WatermarkProperty Field" Url="html/4e403eff-c255-8fc2-fe71-891410c43384.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="731551d9-cb53-49d6-9f5b-798d5e5c57a6" Title="MetroDatePicker Methods" Url="html/bb7cd5f2-49de-95c4-5237-8cb68991a3df.htm">
+        <HelpTOCNode Title="OnApplyTemplate Method " Url="html/7aa5a9b9-9947-a862-779a-e092cd8b33f1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d67f28aa-3791-4480-a0cf-ece087e7d3d7" Title="MetroDatePicker Properties" Url="html/8f9198c4-2b28-e32d-2baa-253fb92c6785.htm">
+        <HelpTOCNode Title="BlackoutIconColor Property " Url="html/c232ad6d-a1b0-c69c-e2c7-69318cb5765c.htm" />
+        <HelpTOCNode Title="CalendarBackground Property " Url="html/bb345909-96ae-aca8-9c95-90ab12fe10da.htm" />
+        <HelpTOCNode Title="CalendarForeground Property " Url="html/3852e1e8-3fc8-f6fe-62fc-9f1db719b7eb.htm" />
+        <HelpTOCNode Title="CalendarHeaderColor Property " Url="html/058ba384-f463-a0de-ff4b-43c932928d84.htm" />
+        <HelpTOCNode Title="CalendarIconColor Property " Url="html/09bd5111-ecde-48fc-0527-aed18fda565c.htm" />
+        <HelpTOCNode Title="CalendarIconHoverColor Property " Url="html/769dca46-1363-c61d-b056-f676602224a8.htm" />
+        <HelpTOCNode Title="HeaderForeground Property " Url="html/2b22d155-ee05-06b1-0a7b-d39979da4fee.htm" />
+        <HelpTOCNode Title="HighlightBackground Property " Url="html/e6ac54fc-c1d6-b00d-0220-215e37e44b16.htm" />
+        <HelpTOCNode Title="SelectedBackground Property " Url="html/ac994f06-b7cd-8366-3309-e82319d87575.htm" />
+        <HelpTOCNode Title="SelectedBorderColor Property " Url="html/7436d55e-2a8b-2544-1132-ef9ed5145bf6.htm" />
+        <HelpTOCNode Title="TodayBackground Property " Url="html/74ec9cdd-ee64-184c-a6e0-3a3424231dc9.htm" />
+        <HelpTOCNode Title="Watermark Property " Url="html/4c75a0a2-8293-259d-f86c-618584de30bf.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MetroDatePicker Events" Url="html/b4a6c26b-ce87-f51e-76ef-b26f7e8198cf.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="69ff41e4-594b-4c3c-ac08-93bdd10ea1e8" Title="MetroListBox Class" Url="html/da5cdf86-0ee6-f7f3-7f98-5f386d8a9ecd.htm">
+      <HelpTOCNode Title="MetroListBox Members" Url="html/9096a79b-89aa-14c7-e490-313093ed07fd.htm" />
+      <HelpTOCNode Title="MetroListBox Constructor " Url="html/adcdc6d6-9898-6901-3946-fc88af98ffe9.htm" />
+      <HelpTOCNode Id="64f7c7b4-c8df-4bfa-82d6-affe9ad1e41b" Title="MetroListBox Fields" Url="html/139c9518-895d-7b54-5b26-d65fd1bbb0d0.htm">
+        <HelpTOCNode Title="HoverBackgroundProperty Field" Url="html/0331b187-5d9f-b963-485f-a19ff66e65bc.htm" />
+        <HelpTOCNode Title="HoverForegroundProperty Field" Url="html/b538446e-b6c9-4bda-a9e8-2eacc3064917.htm" />
+        <HelpTOCNode Title="SelectedBackgroundProperty Field" Url="html/2621df3b-1e11-89d5-30d5-b1fee6579f57.htm" />
+        <HelpTOCNode Title="SelectedForegroundProperty Field" Url="html/996df28b-1220-cfd1-59c6-02a8b034849d.htm" />
+        <HelpTOCNode Title="SeparatorColorProperty Field" Url="html/9967189b-6f23-ca9c-b77a-b4710c6197ac.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="42e37851-b435-429f-998d-beaec09c044d" Title="MetroListBox Methods" Url="html/91086913-68ed-e293-0121-371cc0796e9d.htm">
+        <HelpTOCNode Title="OnApplyTemplate Method " Url="html/6b65bc79-77a7-e7b2-e7cd-4e2ef6d3bbbb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="df36b8f2-b7c3-4819-9ccf-7d6f7a5ecec8" Title="MetroListBox Properties" Url="html/c2efb977-3bae-1afc-18c7-a8fc4a2c86ea.htm">
+        <HelpTOCNode Title="HoverBackground Property " Url="html/7779076b-7eec-489f-c4df-b48363e6dd71.htm" />
+        <HelpTOCNode Title="HoverForeground Property " Url="html/9d9c610c-92b6-f011-b374-14228780036c.htm" />
+        <HelpTOCNode Title="SelectedBackground Property " Url="html/e733a30a-800e-872f-ef35-e2ae3cbc2510.htm" />
+        <HelpTOCNode Title="SelectedForeground Property " Url="html/f8701f37-4946-514f-4c12-1f0cf7732f69.htm" />
+        <HelpTOCNode Title="SeparatorColor Property " Url="html/ea3a0c21-a40f-76e3-f13b-375c873b4042.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MetroListBox Events" Url="html/60198de0-ff0a-459a-02a1-8bd0f06b8c36.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="c0e52ed7-f433-4009-8a8d-37af423c1404" Title="MetroScrollBar Class" Url="html/b3394c54-6312-dc53-0ed5-8c4f8ad03409.htm">
+      <HelpTOCNode Title="MetroScrollBar Members" Url="html/4160d407-0b6e-ad72-8552-d663707c4e1f.htm" />
+      <HelpTOCNode Title="MetroScrollBar Constructor " Url="html/682d9b6f-d3cc-614c-8992-897cc55984b8.htm" />
+      <HelpTOCNode Id="8dc9915c-4a5a-4217-bec5-4f2d357536cb" Title="MetroScrollBar Fields" Url="html/5bbe9e90-420a-96d0-e687-bbf5d9208a0f.htm">
+        <HelpTOCNode Title="BarColorProperty Field" Url="html/1226322d-5ea6-75b4-e70d-760533925e7c.htm" />
+        <HelpTOCNode Title="ThumbColorProperty Field" Url="html/afc7deac-bc52-b216-c421-fb27fa6670b1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4d1b08d8-1504-4df0-a858-463c1463bd7f" Title="MetroScrollBar Methods" Url="html/2e4c79ed-9066-095b-a60b-4c10da82434c.htm">
+        <HelpTOCNode Title="OnApplyTemplate Method " Url="html/cf16c1d1-b5fe-119e-c0bf-ae01128a3d44.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ad61c5e0-c930-4344-82c2-b7993fc71c03" Title="MetroScrollBar Properties" Url="html/16fb3976-c82f-f526-82d7-b6a0da1f3250.htm">
+        <HelpTOCNode Title="BarColor Property " Url="html/659d794a-b08e-3048-64d7-cfc1c83ae615.htm" />
+        <HelpTOCNode Title="ThumbColor Property " Url="html/1aade58a-0b6d-d49e-24b3-39d2adbcbcdb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MetroScrollBar Events" Url="html/48d503ee-57b6-d5e6-039f-cfd55abfdfeb.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="bef3d347-693a-4b87-b29f-1147a9a4d897" Title="MetroScrollViewer Class" Url="html/febf35de-4353-70e9-0dd8-9ec86a1882c6.htm">
+      <HelpTOCNode Title="MetroScrollViewer Members" Url="html/77bdc442-68db-75e0-24b8-79c92feca575.htm" />
+      <HelpTOCNode Title="MetroScrollViewer Constructor " Url="html/4ed226d6-8808-f153-6bfb-639da6ca0b05.htm" />
+      <HelpTOCNode Id="63237a1a-2d0f-48db-acd6-7de12080936c" Title="MetroScrollViewer Methods" Url="html/95f9bfe9-b175-39a2-a663-89c26e79d9a6.htm">
+        <HelpTOCNode Title="OnApplyTemplate Method " Url="html/054c693c-5cac-8e73-d5f1-8f2c84de5b2d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MetroScrollViewer Properties" Url="html/04b8feb2-309d-459f-ae23-ded5956397d4.htm" />
+      <HelpTOCNode Title="MetroScrollViewer Events" Url="html/8624d6a7-2b01-f8b6-435d-b80ee117c74f.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e735cfe5-a2db-4e4d-9bca-2f71b61b2f25" Title="MetroTabItem Class" Url="html/c624c2a2-e1de-b64a-8c1a-871a744a2d1c.htm">
+      <HelpTOCNode Title="MetroTabItem Members" Url="html/9f5dcc93-061e-d21b-38c8-5ca38085b724.htm" />
+      <HelpTOCNode Title="MetroTabItem Constructor " Url="html/63eb58ac-1d38-4165-2f90-8945a89a6339.htm" />
+      <HelpTOCNode Id="6619fb22-76eb-4c02-b919-9471c59e3436" Title="MetroTabItem Fields" Url="html/0418327b-adf4-6538-e71b-14dc46b8b133.htm">
+        <HelpTOCNode Title="IsClosableProperty Field" Url="html/4cc33c20-ea5c-c46c-c1f6-32a6886996b7.htm" />
+        <HelpTOCNode Title="TabCloseClickEvent Field" Url="html/e0e9472c-0886-ff98-50e3-3b4681095111.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bbc95392-cc0e-489e-b230-9651fcc05358" Title="MetroTabItem Methods" Url="html/85b7ccd0-209d-8aba-9f68-d2948e938262.htm">
+        <HelpTOCNode Title="OnApplyTemplate Method " Url="html/4bc22149-3953-aa20-3f73-5d2275001999.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e1547659-66f1-452e-bae8-21cf2e8c1445" Title="MetroTabItem Properties" Url="html/83e7c28b-357b-ae21-8687-b65ef60abc7b.htm">
+        <HelpTOCNode Title="IsClosable Property " Url="html/e8bcacde-c8bf-1b95-15e6-23737dd33b08.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0406edd6-91b0-4889-815f-3723cb4bc394" Title="MetroTabItem Events" Url="html/24e9dfb3-9f5c-4372-02a9-3d301906115f.htm">
+        <HelpTOCNode Title="TabCloseClick Event" Url="html/4892dae7-eb45-dda2-edd0-f9e1c9307ad3.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="99896ef2-a940-4845-b573-ae308aeff320" Title="MetroTextBox Class" Url="html/feaa9e88-066b-7b07-7b15-b9a6cf300187.htm">
+      <HelpTOCNode Title="MetroTextBox Members" Url="html/fbb98e74-b566-adfc-d05a-6f12145d676b.htm" />
+      <HelpTOCNode Title="MetroTextBox Constructor " Url="html/29851e2e-870c-d2ad-ec34-a0f0280fde2d.htm" />
+      <HelpTOCNode Id="5ff2557b-5e24-47ad-8bfd-3a1e6cf3323d" Title="MetroTextBox Fields" Url="html/8afb3373-00dc-e793-947c-1193d4aca5c4.htm">
+        <HelpTOCNode Title="PlaceholderTextProperty Field" Url="html/8f7d8cca-ef68-3cd3-68ac-74d1c1877410.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1ed99bd1-0149-4199-9b1d-87711cb26a49" Title="MetroTextBox Methods" Url="html/3261e799-a84d-5ff4-6ec8-8b39610d4932.htm">
+        <HelpTOCNode Title="OnApplyTemplate Method " Url="html/0ebae94f-abbe-ed4b-464a-4023e8cb1d91.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7a74b3a6-b4dd-4b16-ac0b-cb419338f3fd" Title="MetroTextBox Properties" Url="html/2532111c-0501-6d6e-06d0-1aff1ef12e89.htm">
+        <HelpTOCNode Title="PlaceholderText Property " Url="html/4f942b62-d53b-c99b-8908-c658acf4fe96.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MetroTextBox Events" Url="html/06387f7c-82ab-2ad9-2b1f-c77e2870070a.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="42756c81-ca02-40a2-9497-ad2d91e08144" Title="SearchBox Class" Url="html/68529e2e-8569-916b-a613-7d9fed86a2e7.htm">
+      <HelpTOCNode Title="SearchBox Members" Url="html/57c0fa7b-632a-b4f0-8d2a-cd4e0c2f66c3.htm" />
+      <HelpTOCNode Title="SearchBox Constructor " Url="html/19d9732a-4f1d-ff30-dfc6-699bd5cf5a1a.htm" />
+      <HelpTOCNode Id="41cb7419-dd9b-4c33-a291-fb908707ca17" Title="SearchBox Fields" Url="html/e89b8088-ec7e-737f-8ffb-78e535638ea7.htm">
+        <HelpTOCNode Title="ButtonHoverBackgroundProperty Field" Url="html/c483d286-a02e-65af-d66d-983f04f21644.htm" />
+        <HelpTOCNode Title="ButtonHoverForegroundProperty Field" Url="html/7a820e77-2699-357a-553a-836a2568f8c8.htm" />
+        <HelpTOCNode Title="ListBackgroundProperty Field" Url="html/5dc73590-81f4-3976-355a-3fd56d3c7ddc.htm" />
+        <HelpTOCNode Title="ListForegroundProperty Field" Url="html/fa323109-38a0-cee8-c674-06e7dffcba66.htm" />
+        <HelpTOCNode Title="PlaceholderTextProperty Field" Url="html/0a887e4f-4ad8-c825-8061-aaea1e36689d.htm" />
+        <HelpTOCNode Title="SearchClickEvent Field" Url="html/2cf3a06a-2a1c-ddf5-7bbe-bac8db78dd63.htm" />
+        <HelpTOCNode Title="SelectedBackgroundProperty Field" Url="html/fde79256-f7d6-dada-38f9-b1957b6c469a.htm" />
+        <HelpTOCNode Title="SelectedForegroundProperty Field" Url="html/05004615-3b66-4c51-accd-98ac998f02b1.htm" />
+        <HelpTOCNode Title="SeparatorColorProperty Field" Url="html/66f397f0-e2e3-7656-36c5-9c93fc16a472.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8a85c9fc-5827-4eaa-bfc3-8321f7db8d4a" Title="SearchBox Methods" Url="html/bf165c8e-9dff-8737-89f9-e07869cfb868.htm">
+        <HelpTOCNode Title="OnApplyTemplate Method " Url="html/1ce6c34d-1c2c-2dcf-d504-9408f4e52d0d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fad50a12-4253-4a2e-9005-ab64ad648410" Title="SearchBox Properties" Url="html/d0b2ac74-c22a-6e6b-d029-91ffa38f54bb.htm">
+        <HelpTOCNode Title="ButtonHoverBackground Property " Url="html/4e5ba53a-68b1-3c7f-4fe4-f2e4fbcb6891.htm" />
+        <HelpTOCNode Title="ButtonHoverForeground Property " Url="html/ea7bf6ae-f31e-ce8b-4927-02564066ed96.htm" />
+        <HelpTOCNode Title="ListBackground Property " Url="html/689864c6-5ebe-d206-ff67-2116600885a0.htm" />
+        <HelpTOCNode Title="ListForeground Property " Url="html/0c29ae1e-4ce2-e1e7-087e-41c2581238aa.htm" />
+        <HelpTOCNode Title="PlaceholderText Property " Url="html/21457143-8e8a-84c0-d80a-d5f3282daa51.htm" />
+        <HelpTOCNode Title="SelectedBackground Property " Url="html/48a6115d-4fd3-4513-2eda-2bc0c5223de0.htm" />
+        <HelpTOCNode Title="SelectedForeground Property " Url="html/8e692558-600a-dcb9-61de-70e98c736aab.htm" />
+        <HelpTOCNode Title="SeparatorColor Property " Url="html/391b48b0-7a66-5a5c-d34f-5e07cb608ef8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="91b7038e-bbe1-4c7e-b202-6139dc7515d6" Title="SearchBox Events" Url="html/6ea2785c-9102-77e7-9aaa-2074f2c5dc36.htm">
+        <HelpTOCNode Title="SearchClick Event" Url="html/4541b593-4b5e-c75d-d35d-8b81839123a0.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="508c9996-5a30-4575-b303-88f705f5b5bb" Title="SelectPager Class" Url="html/981d3f11-01f9-0872-b7b0-da80f9912f85.htm">
+      <HelpTOCNode Title="SelectPager Members" Url="html/5c5c270d-0193-f2c1-121e-f7a3f6a64f0d.htm" />
+      <HelpTOCNode Title="SelectPager Constructor " Url="html/bb8f4c2a-e61e-7e10-ae59-7173bfacf50b.htm" />
+      <HelpTOCNode Id="a2b1ed0d-8aef-4677-96b6-fa914fdc3276" Title="SelectPager Fields" Url="html/df787187-419c-afe9-8a36-93d08c6aad24.htm">
+        <HelpTOCNode Title="CurrentPageProperty Field" Url="html/1b21148a-2297-c6ef-86d0-c8c552f08769.htm" />
+        <HelpTOCNode Title="DisabledBackgroundProperty Field" Url="html/749b013b-ac9c-d235-ecd7-0362d121263d.htm" />
+        <HelpTOCNode Title="DisabledForegroundProperty Field" Url="html/8c642238-4542-077c-4e35-19ac2347762c.htm" />
+        <HelpTOCNode Title="PageChangedEvent Field" Url="html/47642be0-ff2a-f115-68b3-7e551d7164a6.htm" />
+        <HelpTOCNode Title="PageCountProperty Field" Url="html/4009dc4e-dd97-2506-bfea-993fcae91ba4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1ef7fa4a-1088-41a3-993c-9db13f0748d8" Title="SelectPager Methods" Url="html/6f744a47-176a-ffb6-1678-e043819138f0.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/7ed0303f-92f4-e934-d8c0-7666f8bf3541.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1b567c49-f96e-47bf-802b-5c4911e07b40" Title="SelectPager Properties" Url="html/3aa7b6e2-8691-1063-a855-d473e355f24f.htm">
+        <HelpTOCNode Title="CurrentPage Property " Url="html/213d9080-3e36-0a26-708f-d13fb671399c.htm" />
+        <HelpTOCNode Title="DisabledBackground Property " Url="html/cb8de531-7922-3cbd-0bd7-3563bda8cb4d.htm" />
+        <HelpTOCNode Title="DisabledForeground Property " Url="html/a9bef7a6-2673-ac99-45ba-530de59f43b0.htm" />
+        <HelpTOCNode Title="PageCount Property " Url="html/e50a3601-7829-0da3-c905-f70f57c22aa7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c92ded25-15a1-48c8-b8b9-ad7d54d45062" Title="SelectPager Events" Url="html/55aa73dc-babd-19d4-0484-52f4c0afac06.htm">
+        <HelpTOCNode Title="PageChanged Event" Url="html/033813e0-8a24-4f6d-7c47-d628d7bb4df2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1918e9b1-96b5-41e1-808b-ecec96338d20" Title="SimplePager Class" Url="html/d3e4736f-eee4-10c6-f72d-5b163b688a86.htm">
+      <HelpTOCNode Title="SimplePager Members" Url="html/42227bfb-f545-55de-9415-79ba304b27f2.htm" />
+      <HelpTOCNode Title="SimplePager Constructor " Url="html/66f1bb73-205b-4cbc-59a3-0bf475ccb945.htm" />
+      <HelpTOCNode Id="d8ccb47b-f9b1-4548-981e-f5ed37c5763d" Title="SimplePager Fields" Url="html/f5335b85-9ffc-eb1d-2252-3b613d170bd8.htm">
+        <HelpTOCNode Title="CurrentPageProperty Field" Url="html/0331da7f-ec54-37c8-2f70-4db82798b523.htm" />
+        <HelpTOCNode Title="PageChangedEvent Field" Url="html/ac4cfdb6-0d3a-8a63-7a80-65eee1d7d139.htm" />
+        <HelpTOCNode Title="PageCountProperty Field" Url="html/4349f65f-186a-6122-5802-505d2743c0c6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="12b2e0fa-ff71-4566-b917-457e2cc1d411" Title="SimplePager Methods" Url="html/e5982b12-b959-1e44-ba1b-6c2ceb699a1b.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/2bec11da-367e-b9dc-cdc3-455fb9e2e123.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bd3cf2df-cf0b-444d-b084-9d31615090d4" Title="SimplePager Properties" Url="html/efd17790-b068-bf74-9839-82915b1de5eb.htm">
+        <HelpTOCNode Title="CurrentPage Property " Url="html/2c8431cc-3386-7a51-76b8-f26acdd3d61e.htm" />
+        <HelpTOCNode Title="PageCount Property " Url="html/b970f507-d533-89f7-4f09-cf4544b65dde.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="91374b8a-0ddf-4355-95c9-5e153fd04fb7" Title="SimplePager Events" Url="html/686acfd2-f97c-3529-669a-6578b138a996.htm">
+        <HelpTOCNode Title="PageChanged Event" Url="html/9e9bcf9e-019c-1cd8-112a-bb375e0e212a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1594e788-11ac-4d84-a639-cd6a7c6d641f" Title="SlideCheck Class" Url="html/0a08077d-4712-5c88-c36e-0d317f5a6062.htm">
+      <HelpTOCNode Title="SlideCheck Members" Url="html/ac06f37f-16d9-ff4e-f546-bd8e0bc9f711.htm" />
+      <HelpTOCNode Title="SlideCheck Constructor " Url="html/5aa4775b-a429-2364-c747-448d0303b905.htm" />
+      <HelpTOCNode Id="179467f4-0907-4f13-8e60-6c7f14cdcb37" Title="SlideCheck Fields" Url="html/972638c7-07c8-6569-030c-5781c33ff08c.htm">
+        <HelpTOCNode Title="CheckChangedEvent Field" Url="html/fc12c866-80d7-bfa8-2a96-1e5871ca5d7e.htm" />
+        <HelpTOCNode Title="CheckedColorProperty Field" Url="html/073026fe-9247-b12d-5e5b-697bc3cfe8a2.htm" />
+        <HelpTOCNode Title="IsCheckedProperty Field" Url="html/6b8b0000-0eaf-2fa7-c6bb-aba7350edef6.htm" />
+        <HelpTOCNode Title="ThumbColorProperty Field" Url="html/d7ab898c-dd2d-db4b-d83b-bf4bb1b89241.htm" />
+        <HelpTOCNode Title="UncheckedColorProperty Field" Url="html/91f7a452-61ec-9fdc-68e2-bf4df327865e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d9d12a06-bb2d-452d-967d-3fa1d6c5087d" Title="SlideCheck Methods" Url="html/2bd5b96c-9063-8cdb-c504-3effe9e3a74b.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/a9a66dcb-7b18-aff8-57e7-89723eed8b07.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e873b506-f3f2-4451-bdf0-b3f3ea3bb5c9" Title="SlideCheck Properties" Url="html/74000c17-5a5e-b0b3-cb09-71e0b2c0c033.htm">
+        <HelpTOCNode Title="CheckedColor Property " Url="html/35ca76e0-818b-1081-029d-d6452b772fde.htm" />
+        <HelpTOCNode Title="IsChecked Property " Url="html/26501891-fc3b-624e-23c1-4898ff023f05.htm" />
+        <HelpTOCNode Title="ThumbColor Property " Url="html/b6e873e1-23ad-b7a8-0ae4-41730c1a7666.htm" />
+        <HelpTOCNode Title="UncheckedColor Property " Url="html/6a5b5f9c-01ba-336b-779e-814a0a36b8b8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3a1a337e-737b-4887-a206-c09643b07872" Title="SlideCheck Events" Url="html/64a3736b-255e-eef8-54b8-d5c0f7d61b4d.htm">
+        <HelpTOCNode Title="CheckChanged Event" Url="html/733ba2d8-d916-5d69-acb6-734a6ac1989d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e2f46e76-93f0-4b4e-9c68-325d16e1bcb9" Title="WinStatesButton Class" Url="html/03e9faf3-2aa9-52e0-7955-2d2b7e0bf70f.htm">
+      <HelpTOCNode Title="WinStatesButton Members" Url="html/4c1469f3-2ce6-d064-b85a-72fb38189e54.htm" />
+      <HelpTOCNode Title="WinStatesButton Constructor " Url="html/7ccf95af-35ad-1d42-12d7-54344c7ebad2.htm" />
+      <HelpTOCNode Id="11b891c6-8202-41ea-bd00-68bd67f60512" Title="WinStatesButton Fields" Url="html/8742f60d-8179-4f44-4289-4cf48f8c021f.htm">
+        <HelpTOCNode Title="BackgroundHoverProperty Field" Url="html/10406103-2e08-7509-ac2b-62c6f7d82153.htm" />
+        <HelpTOCNode Title="CloseClickEvent Field" Url="html/b4201a18-7216-cb6f-8c9d-56420f75c2e4.htm" />
+        <HelpTOCNode Title="ForegroundHoverProperty Field" Url="html/74ecdb55-f6bc-bd64-ff9c-be0f7e040b81.htm" />
+        <HelpTOCNode Title="IsCloseVisibleProperty Field" Url="html/37e3786f-e1a0-4717-2456-01c90cf116ff.htm" />
+        <HelpTOCNode Title="IsMaximizeVisibleProperty Field" Url="html/65beecc6-0d48-49e7-f03f-0dd5531f7f4f.htm" />
+        <HelpTOCNode Title="IsMinimizeVisibleProperty Field" Url="html/44451da3-1096-d63a-b077-c2f518b46837.htm" />
+        <HelpTOCNode Title="MaximizeClickEvent Field" Url="html/0615a669-e686-86b3-f9e3-19d2a1926dbd.htm" />
+        <HelpTOCNode Title="MinimizeClickEvent Field" Url="html/ab551fcf-872e-f7ac-2831-06a04bf10434.htm" />
+        <HelpTOCNode Title="NormalizeClickEvent Field" Url="html/a3a217e6-56fc-9f11-241b-61fae3b510be.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cf6d58f6-20a3-4861-8e99-3c1613e54818" Title="WinStatesButton Methods" Url="html/83a2fe2d-9741-f3c1-8d54-9199e7865b83.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/ea2cd504-f707-c2e6-75a9-3e69ada51df0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a5b23d04-3458-4aa8-83a9-737a9415ad7c" Title="WinStatesButton Properties" Url="html/32e1e84b-f00d-b6f7-53c5-a19bfeb15edb.htm">
+        <HelpTOCNode Title="BackgroundHover Property " Url="html/5014e691-fa1c-e44e-edfa-3391382d895a.htm" />
+        <HelpTOCNode Title="ForegroundHover Property " Url="html/1d380ca2-f370-d091-9571-4fe3cd5d7efb.htm" />
+        <HelpTOCNode Title="IsCloseVisible Property " Url="html/9370c77a-4b61-074b-c0b1-04fb70c0f3b4.htm" />
+        <HelpTOCNode Title="IsMaximizeVisible Property " Url="html/c86961dd-b52f-76bb-e218-89493962e0f9.htm" />
+        <HelpTOCNode Title="IsMinimizeVisible Property " Url="html/0eb478bc-e91d-acbd-526e-00bfdfb067e7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="051b7e93-a3f7-4f38-8d0c-b26beeb61763" Title="WinStatesButton Events" Url="html/26716557-d4a6-8331-8708-b3639b951c34.htm">
+        <HelpTOCNode Title="CloseClick Event" Url="html/b9d40f61-4124-933f-d2db-7b1199cac498.htm" />
+        <HelpTOCNode Title="MaximizeClick Event" Url="html/37c19002-afe8-7edc-ca2a-3cc5dc585cbd.htm" />
+        <HelpTOCNode Title="MinimizeClick Event" Url="html/a22d54b8-56c0-8fa9-4a56-f09d468f61a2.htm" />
+        <HelpTOCNode Title="NormalizeClick Event" Url="html/ce8aa076-e4f9-83fe-fbe3-8b7c9950d258.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="b368c990-a985-42f5-be8f-66623d657554" Title="MetroUiToolkit.Converters Namespace" Url="html/e2ab42c6-f59f-ce75-238d-9019f43ba9ad.htm">
+    <HelpTOCNode Id="314499d8-e680-42f1-9876-b066454d6b7b" Title="BaseConverter Class" Url="html/d3fd84d5-d907-ae26-de97-560b199e1c1e.htm">
+      <HelpTOCNode Title="BaseConverter Members" Url="html/819734b4-8283-5d0f-a8e9-d1df06963641.htm" />
+      <HelpTOCNode Title="BaseConverter Constructor " Url="html/c2e1391f-51b7-d1a3-a128-0cfc7d1efa7e.htm" />
+      <HelpTOCNode Id="b7e8d7b0-3912-4ac9-bf31-0062e16878cd" Title="BaseConverter Methods" Url="html/64114ca4-ec58-1c6a-0fd9-a92163cfb09c.htm">
+        <HelpTOCNode Title="Convert Method " Url="html/31f81d68-e491-b301-8b59-ec27f7dffaab.htm" />
+        <HelpTOCNode Title="ConvertBack Method " Url="html/5052a49e-b1f7-b01a-8797-e045c66fe1a3.htm" />
+        <HelpTOCNode Title="ProvideValue Method " Url="html/d76912b8-0d51-9e88-a584-d032139d5414.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="aa0565a3-5487-4d1f-895e-8bc7164214dc" Title="BoolVisibilityConverter Class" Url="html/07127d1d-c773-9601-8d38-2c3c96e5e216.htm">
+      <HelpTOCNode Title="BoolVisibilityConverter Members" Url="html/20828891-25e9-08bf-0db7-ff12e5947d39.htm" />
+      <HelpTOCNode Title="BoolVisibilityConverter Constructor " Url="html/2be41a03-eca1-acff-938a-005312a24c90.htm" />
+      <HelpTOCNode Id="8bfacba2-2612-4c9d-9629-4972281912a9" Title="BoolVisibilityConverter Methods" Url="html/ef0b8a1a-ce17-15fb-9504-8c7969c403b1.htm">
+        <HelpTOCNode Title="Convert Method " Url="html/f94b76fd-c749-f62b-2c3b-4207895e58e3.htm" />
+        <HelpTOCNode Title="ConvertBack Method " Url="html/c734a3a6-2573-9505-c8b7-9d04f1fd7aa7.htm" />
+        <HelpTOCNode Title="ProvideValue Method " Url="html/a5158de3-a92d-de2e-a97e-07c377eae4b8.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d30b80cb-adbe-42df-a921-3fe42e970ef4" Title="XamlGeneratedNamespace Namespace" Url="html/d56f9899-ea68-441a-14bf-b7e43a3035c7.htm">
+    <HelpTOCNode Id="00a57c9f-3a03-400f-acfc-2ea7f5a2fc3f" Title="GeneratedInternalTypeHelper Class" Url="html/55cad188-76ae-4170-e16c-99dd7b48db5f.htm">
+      <HelpTOCNode Title="GeneratedInternalTypeHelper Members" Url="html/0b4922ec-ad3f-0f6e-be72-3e4b4f63c133.htm" />
+      <HelpTOCNode Title="GeneratedInternalTypeHelper Constructor " Url="html/8b8b175e-3043-79cf-8ba0-588df41d0b04.htm" />
+      <HelpTOCNode Id="a40b9c13-3fe3-4fe9-9a6b-720367b6ca7f" Title="GeneratedInternalTypeHelper Methods" Url="html/a04b6924-91d1-864e-2274-8ccd6e864414.htm">
+        <HelpTOCNode Title="AddEventHandler Method " Url="html/51f3a73d-e9c9-e17c-5d23-7e2a5dcd1260.htm" />
+        <HelpTOCNode Title="CreateDelegate Method " Url="html/b49e6357-9a97-57a4-2c45-c27b1d6a98c0.htm" />
+        <HelpTOCNode Title="CreateInstance Method " Url="html/5b385031-8721-8d17-795c-1236f8ec30f2.htm" />
+        <HelpTOCNode Title="GetPropertyValue Method " Url="html/b1c35457-8ff7-6b8e-c7e4-5f3ef4b4773e.htm" />
+        <HelpTOCNode Title="SetPropertyValue Method " Url="html/1d06c121-4fd6-7908-868c-910f9eb2e46e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
