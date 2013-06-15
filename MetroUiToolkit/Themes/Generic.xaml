@@ -15,6 +15,7 @@
         <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroListBox.xaml" />
         <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroTextBox.xaml" />
         <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroDatePicker.xaml" />
+        <ResourceDictionary Source="/MetroUiToolkit;component/Themes/MetroTreeView.xaml" />
         <ResourceDictionary Source="/MetroUiToolkit;component/Themes/SearchBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

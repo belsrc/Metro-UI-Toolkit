@@ -119,6 +119,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Themes\MetroTreeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Themes\SearchBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -143,6 +147,7 @@
     <Compile Include="MetroScrollBar.cs" />
     <Compile Include="MetroScrollViewer.cs" />
     <Compile Include="MetroTextBox.cs" />
+    <Compile Include="MetroTreeView.cs" />
     <Compile Include="SelectPager.xaml.cs">
       <DependentUpon>SelectPager.xaml</DependentUpon>
     </Compile>
