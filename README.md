@@ -1,3 +1,5 @@
+[![No Maintenance Intended](https://img.shields.io/badge/No%20Maintenance%20Intended-x-red.svg?style=flat-square&longCache=true)](http://unmaintained.tech/)
+
 # Metro UI Toolkit
 Metro UI Toolkit is a simple library of WPF controls that have a Modern/Metro UI look to them. I've also tried to expose several additional properties to make them quicker to customize (without having to build template sections) to hopefully decrease development time.
 
